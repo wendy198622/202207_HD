@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>新理想官網-線上個案</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="Resource-type" content="" />
+	<link rel="icon" href="img/logo.ico">
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@300;400;500;600;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<!-- css -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/project.css" />
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/imgLiquid-min.js"></script>
+	<script type="text/javascript" src="js/fullpage.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<!-- <script type="text/javascript" src="js/vue.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<input class="menu-btn" type="checkbox" id="menu-btn" />
+		<label class="menu-icon" for="menu-btn"><span id="navicon" class="navicon black"></span></label>
+		<a href="index.html" class="logo" id="logo">
+			<img class="ori" src="img/logo_black.svg" alt="">
+		</a>
+		<a href="index.html" class="logo_cover">
+			<img class="cover" src="img/logo_txt.svg" alt="">
+		</a>
+		<ul class="social social_black">
+			<li><a href="javascript:;" class="search is_acted"><img src="img/nav_search_black.svg" alt=""></a></li>
+			<li>
+				<a href="javascript:;" class="search_active" id="search_active">
+					<img src="img/nav_search_black.svg" alt="">
+				</a>
+			</li>
+			<li><a href="https://lin.ee/9UtHShi" target="_blank"><img src="img/nav_line_black.svg" alt=""></a></li>
+			<li><a href="https://www.facebook.com/Neo.vision" target="_blank"><img src="img/nav_facebook_black.svg" alt=""></a></li>
+		</ul>
+		<ul class="social_cover">
+			<li><a href="javascript:;" class="search is_acted"><img class="white" src="img/nav_search.svg" alt=""></a></li>
+			<li>
+				<a href="javascript:;" class="search_active white"><img class="white" src="img/nav_search.svg" alt=""></a>
+			</li>
+			<li><a href="https://lin.ee/9UtHShi" target="_blank"><img class="white" src="img/nav_line.svg" alt=""></a></li>
+			<li><a href="https://www.facebook.com/Neo.vision" target="_blank"><img class="white" src="img/nav_facebook.svg" alt=""></a></li>
+		</ul>
+		<input type="text" v-model="name" name="name" placeholder="" required class="searchbar black"/>
+		<div class="cover_menu">
+			<ul class="menu">
+					<div class="box">
+						<li class="animated slideInLeft"><a href="news.html"><span>news</span>最新消息</a></li>
+						<li class="animated slideInLeft" data-wow-delay=".1s"><a href="aboutus.html"><span>about us</span>關於我們</a></li>
+						<li class="animated slideInLeft" data-wow-delay=".2s"><a href="project.html"><span>online project</span>線上個案</a></li>
+						<li class="animated slideInLeft" data-wow-delay=".3s"><a href="cases.html"><span>HISTORY cases</span>歷年個案</a></li>
+					</div>
+					<div class="box">
+						<li class="animated slideInLeft" data-wow-delay=".4s"><a href="contactus.html"><span>contact us</span>聯絡我們</a></li>
+						<li class="animated slideInLeft" data-wow-delay=".5s"><a href="benefits.html"><span>VIP BENEFITS</span>專屬好康</a></li>
+						<li class="animated slideInLeft" data-wow-delay=".6s"><a href="http://210.71.197.175/cs01/MLogin/LoginF.asp" target="_blank"><span>Staff only</span>員工園地</a></li>
+					</div>
+			</ul>
+			<ul class="social_mob">
+				<li><a href="https://lin.ee/9UtHShi" target="_blank"><img src="img/nav_line.svg" alt=""></a></li>
+				<li><a href="https://www.facebook.com/Neo.vision" target="_blank"><img src="img/nav_facebook.svg" alt=""></a></li>
+			</ul>
+			<div class="copyright">
+				<p>Copyright © 2021 新理想廣告股份有限公司 版權所有</p>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="theme">
+			<div class="top_topic">
+				<div class="container">
+					<div class="topicBox">
+						<div class="title"><span style="font-family: 'Playfair Display', serif;">online project</span>線上個案</div>
+					</div>
+				</div>
+            </div>
+			<div class="category">
+				<div class="container">
+					<div class="title">Category</div>
+					<ul>
+						<li class="filter active">全區</li>
+						<li class="filter">雙北</li>
+						<li class="filter">桃園</li>
+						<li class="filter">竹苗</li>
+						<li class="filter">台中</li>
+					</ul>
+				</div>
+			</div>
+            <div class="tagContent">
+				<div class="container">
+					<div class="title">Tag</div>
+					<ul>
+						<li>			
+				            <input class="tag-btn" type="checkbox" id="tag-btn1" />
+							<span><img src="img/check_white.svg" alt=""></span>
+							<label for="tag-btn1">公園宅</label>
+						</li>
+						<li>			
+				            <input class="tag-btn" type="checkbox" id="tag-btn2" />
+							<span><img src="img/check_white.svg" alt=""></span>
+							<label for="tag-btn2">低總價</label>
+						</li>
+						<li>			
+				            <input class="tag-btn" type="checkbox" id="tag-btn3" />
+							<span><img src="img/check_white.svg" alt=""></span>
+							<label for="tag-btn3">站前商圈</label>
+						</li>
+						<li>			
+				            <input class="tag-btn" type="checkbox" id="tag-btn4" />
+							<span><img src="img/check_white.svg" alt=""></span>
+							<label for="tag-btn4">四房</label>
+						</li>
+						<li>			
+				            <input class="tag-btn" type="checkbox" id="tag-btn5" />
+							<span><img src="img/check_white.svg" alt=""></span>
+							<label for="tag-btn5">三房</label>
+						</li>
+						<li>			
+				            <input class="tag-btn" type="checkbox" id="tag-btn6" />
+							<span><img src="img/check_white.svg" alt=""></span>
+							<label for="tag-btn6">兩房</label>
+						</li>
+						<li>			
+				            <input class="tag-btn" type="checkbox" id="tag-btn7" />
+							<span><img src="img/check_white.svg" alt=""></span>
+							<label for="tag-btn7">兩加一房</label>
+						</li>
+						<li>			
+				            <input class="tag-btn" type="checkbox" id="tag-btn8" />
+							<span><img src="img/check_white.svg" alt=""></span>
+							<label for="tag-btn8">青埔特區</label>
+						</li>
+						<li>			
+				            <input class="tag-btn" type="checkbox" id="tag-btn9" />
+							<span><img src="img/check_white.svg" alt=""></span>
+							<label for="tag-btn9">AI智慧宅</label>
+						</li>
+						<li>			
+				            <input class="tag-btn" type="checkbox" id="tag-btn10" />
+							<span><img src="img/check_white.svg" alt=""></span>
+							<label for="tag-btn10">飯店宅</label>
+						</li>
+						<li>			
+				            <input class="tag-btn" type="checkbox" id="tag-btn11" />
+							<span><img src="img/check_white.svg" alt=""></span>
+							<label for="tag-btn11">全齡宅</label>
+						</li>               
+					</ul>
+				</div>
+            </div>
+			<div class="projectBox">
+				<div class="container">
+					<ul id="content">
+						<li>
+							<a href="project_single.html" class="wow fadeInUp" target="_blank">
+								<div class="imgBox"><img src="img/project/projectImg01.jpg" alt=""></div>
+                                <div class="titleBox">海洋都心海洋都心海洋都心海洋都心海洋都心海洋都心海洋都心</div>
+                                <div class="tagBox js_height">
+									<span>#低首付</span><span>#三房</span><span>#二房</span><span>#興富發</span><span>#三房</span>
+									<span>#低首付</span><span>#三房</span><span>#二房</span><span>#興富發</span><span>#三房</span>
+                                </div>
+							</a>
+						</li>
+						<li>
+							<a href="project_single.html" class="wow fadeInUp" data-wow-delay="0.3s" target="_blank">
+								<div class="imgBox"><img src="img/project/projectImg02.jpg" alt=""></div>
+                                <div class="titleBox">綠House</div>
+                                <div class="tagBox js_height">
+                                    <span>#公園宅</span><span>#小坪數</span>
+                                </div>
+							</a>
+						</li>
+						<li>
+							<a href="project_single.html" class="wow fadeInUp" data-wow-delay="0.6s" target="_blank">
+								<div class="imgBox"><img src="img/project/projectImg03.jpg" alt=""></div>
+                                <div class="titleBox">富御捷境</div>
+                                <div class="tagBox js_height">
+                                    <span>#二房</span><span>#低總價</span><span>#捷運宅</span>
+                                </div>
+							</a>
+						</li>
+						<li>
+							<a href="project_single.html" class="wow fadeInUp" target="_blank">
+								<div class="imgBox"><img src="img/project/projectImg01.jpg" alt=""></div>
+                                <div class="titleBox">海洋都心</div>
+                                <div class="tagBox js_height">
+                                    <span>#低首付</span><span>#三房</span><span>#二房</span><span>#興富發</span>
+                                </div>
+							</a>
+						</li>
+						<li>
+							<a href="project_single.html" class="wow fadeInUp" data-wow-delay="0.3s" target="_blank">
+								<div class="imgBox"><img src="img/project/projectImg02.jpg" alt=""></div>
+                                <div class="titleBox">綠House</div>
+                                <div class="tagBox js_height">
+                                    <span>#公園宅</span><span>#小坪數</span>
+                                </div>
+							</a>
+						</li>
+						<li>
+							<a href="project_single.html" class="wow fadeInUp" data-wow-delay="0.6s" target="_blank">
+								<div class="imgBox"><img src="img/project/projectImg03.jpg" alt=""></div>
+                                <div class="titleBox">富御捷境</div>
+                                <div class="tagBox js_height">
+                                    <span>#二房</span><span>#低總價</span><span>#捷運宅</span>
+                                </div>
+							</a>
+						</li>
+					</ul>
+					<div class="btn wow fadeInUp" id="moreBtn"><span>READ MORE</span></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="popup popup_line">
+			<div class="popup_content popup_code">
+				<div class="close"><i class="material-icons">clear</i></div>
+				<img src="img/gotoline.svg" alt="">
+			</div>
+		</div>
+		
+	</section>
+	<footer>
+		<div class="contentBox">
+			<div class="logo">
+				<a href="index.html">
+					<img src="img/logo.svg" alt="">
+				</a>
+			</div>
+			<div class="navItem">
+				<ul>
+					<li><a href="news.html"><span>news</span>最新消息</a></li>
+					<li><a href="aboutus.html"><span>about us</span>關於我們</a></li>
+					<li><a href="project.html"><span>online project</span>線上個案</a></li>
+					<li><a href="cases.html"><span>HISTORY cases</span>歷年個案</a></li>
+				</ul>
+				<ul>
+					<li><a href="contactus.html"><span>contact us</span>聯絡我們</a></li>
+					<li><a href="benefits.html"><span>VIP BENEFITS</span>專屬好康</a></li>
+					<li><a href="http://210.71.197.175/cs01/MLogin/LoginF.asp" target="_blank"><span>Staff only</span>員工園地</a></li>
+				</ul>
+			</div>
+			<div class="companyInfo">
+				<div class="add"><a href="https://goo.gl/maps/8y7g99qWPYEXvdpX7" target="_blank">33048<br>桃園市桃園區鎮一街111號1樓</a></div>
+				<div class="tel">Tel - <a href="tel:033396726">03-3396726</a><br>Mail - <a
+						href="mailto:service@neo-vision.com">service@neo-vision.com</a></div>
+				<div class="time">Service time<br>周一至周五 9:00-18:00</div>
+			</div>
+		</div>
+		<div class="socialBox">
+			<p>追蹤我們獲得更多優惠內容和最新消息</p>
+			<ul class="social">
+				<li><a href="https://www.facebook.com/Neo.vision" target="_blank"><img src="img/nav_facebook.svg" alt="">facebook</a></li>
+				<li><a class="gotoline" href="javascript:;"><img src="img/nav_line.svg" alt="">line</a></li>
+				<li><a href="https://www.instagram.com/neovision.ad/" target="_blank"><img src="img/nav_instagram.svg" alt="">instagram</a></li>
+			</ul>
+		</div>
+		<div class="copyright">
+			<p>Copyright © 2021  <a href="index.html">新理想廣告股份有限公司</a>版權所有 <a href="img/privacy.pdf" target="_blank">隱私權政策規範</a></p>
+		</div>
+		<div class="goTop"><img src="img/goTop.svg" alt=""></div>
+	</footer>
+</body>
+<script>
+
+	new WOW().init();
+	$(".imgLiquidFill").imgLiquid();
+
+// ---------- header ----------
+
+	//search bar
+	$('.search').on('click', function () {
+		$('.searchbar').addClass('is_acted');
+		$('.search_active').addClass('is_acted');
+		$('.search').removeClass('is_acted');
+
+		if ($(window).width() < 480) {
+			$('.menu').css('margin-top','130px');		
+		}else if ($(window).width() < 800) {
+			$('.menu').css('margin-top','160px');	
+		}else {
+			$('.menu').css('margin-top','auto');	
+		}
+	});
+	$('.search_cover').on('click', function () {
+		$('.searchbar').addClass('is_acted');
+		$('.search_active').addClass('is_acted');
+		$('.search_cover').removeClass('is_acted');
+
+		if ($(window).width() < 480) {
+			$('.menu').css('margin-top','130px');		
+		}else if ($(window).width() < 800) {
+			$('.menu').css('margin-top','160px');	
+		}else {
+			$('.menu').css('margin-top','auto');	
+		}
+	});
+
+	//menu open
+	$(".menu-icon").click(function () {
+		$(".header").toggleClass("open");
+	});
+
+
+// ---------- footer ----------
+
+	//back top
+	$(".goTop").on("click", function () {
+		$("html, body").animate({ scrollTop: 0 }, 500);
+	});
+
+	//line popup
+	$('.gotoline').on('click', function () {
+		$('.popup_line').addClass('is_acted');
+	});
+	$('.close').on('click', function () {
+		$('.popup_line').removeClass('is_acted');
+	});
+
+
+// ---------- content ----------
+
+	//category
+	$(".filter").click(function() {
+		$(this).addClass("active");
+		$(this).siblings().removeClass("active");
+	});
+
+	//more button
+	$(document).ready(function () {
+		$('#moreBtn').click(function (e) {
+			$('#content').append('<li>' +
+				'<a href="project_single.html" target="_blank">' +
+				'<div class="imgBox"><img src="img/project/projectImg01.jpg" alt=""></div>' +
+				'<div class="titleBox">海洋都心</div>' +
+				'<div class="tagBox js_height">' +
+				'<span>#低首付</span><span>#三房</span><span>#二房</span><span>#興富發</span>' +
+				'</div>' +
+				'</a>' +
+				'</li>');
+			$('#content').append('<li>' +
+				'<a href="project_single.html" target="_blank">' +
+				'<div class="imgBox"><img src="img/project/projectImg02.jpg" alt=""></div>' +
+				'<div class="titleBox">海洋都心</div>' +
+				'<div class="tagBox js_height">' +
+				'<span>#低首付</span><span>#三房</span><span>#二房</span><span>#興富發</span>' +
+				'</div>' +
+				'</a>' +
+				'</li>');
+			$('#content').append('<li>' +
+				'<a href="project_single.html" target="_blank">' +
+				'<div class="imgBox"><img src="img/project/projectImg03.jpg" alt=""></div>' +
+				'<div class="titleBox">海洋都心</div>' +
+				'<div class="tagBox js_height">' +
+				'<span>#低首付</span><span>#三房</span><span>#二房</span><span>#興富發</span>' +
+				'</div>' +
+				'</a>' +
+				'</li>');
+		});
+	});
+
+	//box height
+    var max = 0;
+    $('.js_height').each(function (T) {
+      T = $(this).outerHeight(), T > max && (max = T);
+    }).outerHeight(max);
+
+</script>
+
+</html>

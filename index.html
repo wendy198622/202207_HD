@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>新理想官網-首頁</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="Resource-type" content="" />
+	<link rel="icon" href="img/logo.ico">
+	<meta property="og:image"
+		content="https://neo-vision.com.tw.61-221-12-56.dolphin.potia.net/web/img/index/1200x628.jpg">
+
+	<!-- css -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.min.css" /> -->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/imgLiquid-min.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+</head>
+
+<body>
+	<header class="header clearfix">
+		<div class="header_logo">
+			<a href="/">
+				<img src="img/HD_logo.svg" alt="">
+			</a>
+		</div>
+		<nav>
+			<div class="header_control">
+				<input class="menu-btn" type="checkbox" id="menu-btn" />
+				<label class="menu-icon" for="menu-btn"><span id="navicon" class="navicon"></span></label>
+			</div>
+			<ul class="header_menu">
+				<li><a href="#">關於華登</a></li>
+				<li><a href="#">個案作品</a></li>
+				<li><a href="#">最新消息</a></li>
+				<li><a href="#">聯絡我們</a></li>
+			</ul>
+		</nav>
+
+	</header>
+	<section>
+	</section>
+	<footer>
+	</footer>
+</body>
+<script>
+	$(document).ready(function () {
+		new WOW().init();
+		$(".imgLiquidFill").imgLiquid();
+
+
+		$('.menu-btn').on('click', function () {
+			$('.header_menu').toggle(500);
+		});
+	});
+
+</script>
+</html>
