@@ -248,20 +248,6 @@
 			</div>
 		</div>
 	</section>
-    
-    <section class="form_popup">
-        <div class="form_popup_box">
-            <p>感謝您填寫預約看屋表格<br>
-                我們收到您提供的資訊以後會儘快替您安排並與您聯繫<br><br>
-                謝謝
-            </p>
-            <div class="popup_close">
-                <span class="material-icons">
-                    close
-                </span>
-            </div>
-        </div>
-    </section>
 	
 	<footer>
 		<div class="footer_logo">
@@ -312,19 +298,25 @@
 			slidesToShow: 3,
 			slidesToScroll: 1
   		});
-          
-        
-		$('button').on('click', function () {
-			$('.form_popup').addClass('is_acted');
-			setTimeout(() => {
-				$('.form_popup').removeClass('is_acted');
-			}, 10000)
-		});
-		
-		$('.popup_close').on('click', function () {
-			$('.form_popup').removeClass('is_acted');
-		});
 
+		// $(".home_event_nav li:eq(0)").click(function(){
+		// 	$(".home_event_banner_box").animate({"left":"0px"},400)
+		// })
+		// $(".home_event_nav li:eq(1)").click(function(){
+		// 	$(".home_event_banner_box").animate({"left":"-100%"},400)
+		// })
+		// $(".home_event_nav li:eq(2)").click(function(){
+		// 	$(".home_event_banner_box").animate({"left":"-200%"},400)
+		// })
+		// $(".home_event_nav li:eq(3)").click(function(){
+		// 	$(".home_event_banner_box").animate({"left":"-300%"},400)
+		// })
+		// $(".home_event_nav li:eq(4)").click(function(){
+		// 	$(".home_event_banner_box").animate({"left":"-400%"},400)
+		// })
+		// $(".home_event_nav li:eq(5)").click(function(){
+		// 	$(".home_event_banner_box").animate({"left":"-500%"},400)
+		// })
 	});
 
 </script>
