@@ -310,6 +310,9 @@ section{
         overflow: hidden;
         background: url(../img/news_bg.jpg) center top no-repeat;
         background-size: cover; 
+        @media (max-width:960px){
+            padding: 10% 10% 60px;
+        }
         .home_news_title{
             float: left;
             border-left: 1px solid #a6936a;
