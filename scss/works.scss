@@ -113,6 +113,7 @@ section{
                     width: calc( 100% / 3);
                     padding: 0 20px 60px;
                     float: left;
+                    a{ overflow: hidden;}
                     .works_photo_item_caption{
                         // width: 80%;
                         float: left;
@@ -130,61 +131,361 @@ section{
                     .works_photo_item_year{
                         // width: 20%;
                         float: right;
-                        margin-top: 52px;
+                        margin-top: 32px;
                         font-size: 32px;
                         color: #a6936a;
                     }
                 }
 
-                .slick-prev{
-                    width: 64px;
-                    height: 64px;
-                    border: 1px solid #a6936a;
-                    top: auto;
-                    left: -260px;
-                    bottom: 80px;
-                    right: auto;
-                    z-index: 5;
-                    &:before{
-                        width: 0;
-                        height: 0;
-                        display: inline-block;
-                        border-style: solid;
-                        border-width: 7px 14px 7px 0;
-                        border-color: transparent #a6936a transparent transparent;
-                        opacity: 1;
-                        position: absolute;
-                        top: 24px;
-                        left: 24px;
-                    }
-                }
+                // .slick-prev{
+                //     width: 64px;
+                //     height: 64px;
+                //     border: 1px solid #a6936a;
+                //     top: auto;
+                //     left: -260px;
+                //     bottom: 80px;
+                //     right: auto;
+                //     z-index: 5;
+                //     &:before{
+                //         width: 0;
+                //         height: 0;
+                //         display: inline-block;
+                //         border-style: solid;
+                //         border-width: 7px 14px 7px 0;
+                //         border-color: transparent #a6936a transparent transparent;
+                //         opacity: 1;
+                //         position: absolute;
+                //         top: 24px;
+                //         left: 24px;
+                //     }
+                // }
     
-                .slick-next{
-                    width: 64px;
-                    height: 64px;
-                    border: 1px solid #a6936a;
-                    top: auto;
-                    left: -260px;
-                    bottom: 17px;
-                    right: auto;
-                    z-index: 5;
-                    &:before{
-                        width: 0;
-                        height: 0;
-                        display: inline-block;
-                        border-style: solid;
-                        border-width: 7px 0 7px 14px;
-                        border-color: transparent transparent transparent #a6936a;
-                        opacity: 1;
-                        position: absolute;
-                        top: 24px;
-                        left: 24px; 
-                    }
-                }
+                // .slick-next{
+                //     width: 64px;
+                //     height: 64px;
+                //     border: 1px solid #a6936a;
+                //     top: auto;
+                //     left: -260px;
+                //     bottom: 17px;
+                //     right: auto;
+                //     z-index: 5;
+                //     &:before{
+                //         width: 0;
+                //         height: 0;
+                //         display: inline-block;
+                //         border-style: solid;
+                //         border-width: 7px 0 7px 14px;
+                //         border-color: transparent transparent transparent #a6936a;
+                //         opacity: 1;
+                //         position: absolute;
+                //         top: 24px;
+                //         left: 24px; 
+                //     }
+                // }
 
             }
         }
 
+
+        &.inner{
+            background: url(../img/page_workspage_bg_top.jpg) center top no-repeat,
+                        url(../img/page_workspage_bg_bottom.jpg) center bottom no-repeat;
+                        padding-bottom: 120px;
+            .works_title_inner{
+                width: 100%;
+                padding: 40px 60px;
+                h2{ 
+                    margin-top: 10px;
+                    text-align: center;
+                }
+                h3{ 
+                    text-align: center;
+                    font-family: 'Noto Sans TC', sans-serif;
+                }
+            }
+
+            .works_page_inner{
+                width: 92%;
+                padding: 0 4%;
+                margin: 0 auto;
+                .works_page_photo_kv{    
+                    padding-bottom: 20px;
+                    .works_page_photo_box{
+                        .slick-dots{
+                            text-align: left;
+                            bottom: -40px;
+                            li{
+                                margin-right: 10px;
+                                width: 42px;
+                                button{
+                                    width: 42px;
+                                    &:before{
+                                        content: "";
+                                        width: 42px;
+                                        height: 2px;
+                                        background-color: rgba(0,0,0,.8);
+                                    }
+                                }
+                                &.slick-active{
+                                    button{
+                                        &:before{
+                                            background-color: rgba(0,0,0,1);    
+                                        }
+                                    }
+    
+                                }
+                            }
+
+                        }
+                    }
+                    .works_page_photo_item{
+                        position: relative;
+                        span{
+                            position: absolute;
+                            bottom: 20px;
+                            right: 20px;
+                            color: #fff;
+                            font-size: 14px;
+                            font-family: 'Noto Sans TC', sans-serif;
+                        }
+                    }
+                }
+                .works_page_title{
+                    margin-top: 60px;
+                    h4{
+                        font-size: 28px;
+                        letter-spacing: 1px;
+                    }
+                    p{
+                        font-size: 20px;
+                        letter-spacing: 1px;
+                        line-height: 1.8;
+                        font-family: 'Noto Sans TC', sans-serif;
+                        font-weight: 300;
+                        padding: 10px 0;
+                    }
+                }
+                .works_page_photo{
+                    ul{
+                        padding: 0;
+                        overflow: hidden;
+                        li{
+                            width: calc( (100% - 32px) / 3 );
+                            margin-right: 16px;
+                            float: left;
+                            &:last-child{ margin-right: 0;}
+                            position: relative;
+                            span{
+                                position: absolute;
+                                bottom: 10px;
+                                left: 10px;
+                                color: #fff;
+                                font-size: 14px;
+                                font-family: 'Noto Sans TC', sans-serif;
+                            }
+                        }
+                    }
+                }
+                .works_page_introduce{
+                    overflow: hidden;
+                    .works_page_introduce_box{
+                        width: 48%;
+                        float: left;
+                        .works_page_title{
+                            h4{
+                                padding-left: 40px;
+                                position: relative;
+                                &:before{
+                                    content: "";
+                                    width: 24px;
+                                    height: 2px;
+                                    background-color: #a6936a;
+                                    position: absolute;
+                                    left: 0;
+                                    top: 50%;
+                                }
+                            }
+                            ol{
+                                padding: 0;
+                                li{
+                                    padding: 12px 0;
+                                    border-bottom: 1px solid #a6936a;
+                                    display: flex;
+                                    span{
+                                        font-size: 18px;
+                                        font-family: 'Noto Sans TC', sans-serif;
+                                        font-weight: 300;
+                                        letter-spacing: 3px;
+                                        display: inline-block;
+                                        &.title{
+                                            width: 120px;
+                                            font-weight: 400;
+                                            justify-content:space-between
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .works_page_contactus_box{
+                        width: 48%;
+                        float: right;
+                        background-color: #d2c9b4;
+                        padding: 80px 50px;
+                        margin-top: 60px;
+                        h2{
+                            text-align: center;
+                            font-size: 28px;
+                            letter-spacing: 4px;
+                            font-weight: 500;
+                        }
+                        h3{
+                            text-align: center;
+                            font-size: 20px;
+                        }
+
+                        .works_page_contactus_form{
+                            position: relative;
+                            margin-top: 60px;
+                            .works_page_contactus_form_item{
+                                width: 100%;
+                                color: #a6936a;
+                                padding: 10px 0;
+                                overflow: hidden;
+
+                                &.check{
+                                    width: 420px;
+                                    float: left;
+                                    margin-top: 40px;
+                                }
+            
+                                label{
+                                    width: 140px;
+                                    display: block;
+                                    float: left;
+                                    font-size: 16px;
+                                    line-height: 2.4;
+                                    font-family: 'Noto Sans TC', sans-serif;
+                                    font-weight: 300;
+                                    letter-spacing: 3px;
+                                    display: inline-block;
+                                    &.checktxt{
+                                        width: calc( 100% - 40px );
+                                        float: left;
+                                        letter-spacing: 1px;
+                                        font-family: 'Questrial', 'Noto Serif TC', serif;
+                                        a{
+                                            color: #fff;
+                                            display: inline;
+                                            text-decoration: underline;
+                                            font-size: 12px;
+                                            letter-spacing: 1px;
+                                        }
+                                    }
+                                }
+                                input[type="text"]{
+                                    width: calc( 100% - 140px );
+                                    float: right;
+                                    background-color: #fff;
+                                    color: #a6936a;
+                                    font-size: 16px;
+                                    line-height: 2.4;
+                                    padding: 0 10px;
+                                    &:focus{
+                                        outline: 0;
+                                    }
+                                }
+                                input[type="checkbox"]{
+                                    width: 20px;
+                                    height: 20px;
+                                    border: 1px solid #000;
+                                    margin-top: 5px;
+                                    margin-right: 10px;
+                                    padding: 0;
+                                    float: left;
+                                    &:focus{
+                                        outline: 0;
+                                    }
+                                    &:checked{
+                                        outline: 0;
+                                        bottom: 0;
+                                        &:after{
+                                            width: 20px;
+                                            height: 20px;
+                                            content: "";
+                                            background: url(../img/check.svg) 0 0 no-repeat;
+                                            position: absolute;
+                                            z-index: 3;
+                                            top: 2px;
+                                            left: 0;
+                        
+                                        }
+                                    }
+                                }
+                                textarea{
+                                    width: calc( 100% - 140px );
+                                    float: right;
+                                    background-color: transparent;
+                                    border: 0;
+                                    background-color: #fff;
+                                    height: 96px;
+                                    resize: none;
+                                    color: #a6936a;
+                                    font-size: 16px;
+                                    padding: 0 10px;
+                                    @media (max-width:600px){
+                                        font-size: 14px;
+                                    }
+                                    &:checked, &:focus{
+                                        outline: 0;
+                                    }
+                                }
+                                ::placeholder{
+                                    font-size: 16px;
+                                    font-family: 'Noto Sans TC', sans-serif;
+                                    line-height: 2.4;
+                                    color: #cfcfcf;
+                                }
+                                
+            
+                            }
+            
+                            button{
+                                width: 180px;
+                                height: 50px;
+                                font-size: 22px;
+                                text-align: left;
+                                padding: 0 12px;
+                                border: 1px solid #000;
+                                background: #fff;
+                                font-weight: 600;
+                                color: #000;
+                                transition: all .3s;
+                                float: right;
+                                margin-top: 40px;
+                                &:after{
+                                    right: 12px;
+                                    top: 16px;
+                                    border-color: transparent transparent transparent #000;                                    
+                                }
+                                &:hover{ 
+                                    cursor: pointer;
+                                    background: #a6936a;
+                                    color: #fff;
+                                    background-color: #000;
+                                    &:after{
+                                        right: 12px;
+                                        top: 16px;
+                                        border-color: transparent transparent transparent #fff;                                    
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .works_navigation{
             width: 102px;
             margin: 0 auto;
@@ -231,6 +532,15 @@ section{
             }
         }
         
+    }
+
+    .page_works_map{
+        width: 100%;
+        height: 480px;
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
     }
 
 
