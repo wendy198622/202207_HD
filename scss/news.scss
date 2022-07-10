@@ -70,20 +70,25 @@ section{
                 text-align: center;
             }
         }
+
         .news_content{
             width: 88%;
             margin: 0 auto;
+            
             .news_item{
                 width: calc( 100% - 160px);
                 margin: 0 auto;
                 padding: 96px 160px 200px;
                 background: #fff;
                 li{
-                    padding: 20px 0;
                     text-align: justify;
                     overflow: hidden;
                     border-bottom: 1px dashed #a6936a;
-                    a{ color: #a6936a;}
+                    a{ 
+                        padding: 20px 0;
+                        color: #a6936a;
+                        overflow: hidden;
+                    }
                     span{ 
                         display: block; 
                         float: left;
@@ -104,8 +109,60 @@ section{
                     }
                 }
             }
-        }
 
+            .news_page_inner{
+                width: calc( 100% - 120px);
+                margin: 0 auto;
+                padding: 96px 60px 200px;
+                background: #fff;
+                overflow: hidden;
+                .news_page_title{
+                    width: calc(100% - 200px);
+                    font-size: 28px;
+                    font-weight: 600;
+                    line-height: 1.4;
+                    float: left;
+                    margin-bottom: 20px;
+                }
+
+                .news_page_date{
+                    width: 200px;
+                    font-size: 24px;
+                    float: right;
+                    text-align: right;
+                    color: #a6936a;
+                }
+
+                hr{
+                    width: 100%;
+                    height: 1px;
+                    border-color: #a6936a;
+                    margin: 0 auto 60px;
+                }
+
+                .news_page_content{
+                    font-family: 'Noto Sans TC', sans-serif;
+                    overflow: hidden;
+                    > div{
+                        width: 100%;
+                        float: left;
+                        padding: 20px;
+                        p{
+                            width: 100%;
+                            font-size: 18px;
+                            line-height: 1.6;
+                            letter-spacing: 1px;
+                            text-align: justify;
+                        }
+                    }
+                    > div[width="50%"]{
+                        width: 50%;
+                        float: left;
+                        padding: 20px;
+                    }
+                }
+            }
+        }
         .news_navigation{
             width: 102px;
             margin: -122px auto 0;
