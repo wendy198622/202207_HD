@@ -9,6 +9,9 @@ section{
         line-height: 1;
         font-weight: 600;
         letter-spacing: 6px;
+        @media (max-width:960px){
+            font-size: 5vw;            
+        }
     }
     h3{
         font-size: 22px;
@@ -16,6 +19,9 @@ section{
         font-weight: 200;
         letter-spacing: 1px;
         color: #a6936a;
+        @media (max-width:960px){
+            font-size: 2.6vw;            
+        }
     }
 
     .more, .send{
@@ -59,6 +65,9 @@ section{
                     url(../img/page_works_bg_bottom.jpg) center bottom no-repeat;
         background-size: contain; 
         position: relative;
+        @media (max-width:960px){
+            padding-top: 20%;
+        }
 
         .works_title{
             width: 100%;
@@ -114,6 +123,9 @@ section{
                     width: calc( 100% / 3);
                     padding: 0 20px 60px;
                     float: left;
+                    @media (max-width:960px){
+                        width: calc( 100% / 2);
+                    }
                     a{ overflow: hidden;}
                     .works_photo_item_caption{
                         // width: 80%;
@@ -123,10 +135,16 @@ section{
                             margin-bottom: 12px;
                             font-size: 26px;
                             font-weight: 500;
+                            @media (max-width:960px){
+                                font-size: 3vw;            
+                            }
                         }
                         p{
                             font-size: 15px;
                             color: #a6936a;
+                            @media (max-width:960px){
+                                font-size: 2vw;            
+                            }
                         }
                     }
                     .works_photo_item_year{
@@ -135,6 +153,10 @@ section{
                         margin-top: 32px;
                         font-size: 32px;
                         color: #a6936a;
+                        @media (max-width:960px){
+                            margin-top: 36px;
+                            font-size: 3.2vw;            
+                        }
                     }
                 }
 
@@ -500,6 +522,12 @@ section{
                 line-height: 46px;
                 transition: all .3s;
                 background: transparent;
+                @media (max-width:960px){
+                    width: 6vw;
+                    height: 6vw;
+                    font-size: 3vw;
+                    line-height: 1.4;
+                }
                 &:focus, &:hover, &:active{
                     outline: 0;
                     box-shadow: none;
@@ -522,6 +550,9 @@ section{
             width: calc( 88% - 40px );
             height: 50px;
             margin: -60px auto 0;
+            @media (max-width:960px){
+                margin: -40px auto 0;
+            }
     
             .works_navigation_left{
                 width: 24%;
@@ -587,6 +618,10 @@ section{
                     width: 40%;
                     margin-left: 50%;
                     margin-top: -60px;
+                    @media (max-width:960px){
+                        margin-top: 0;
+                        padding: 5% 0;
+                    }
                     .works_classic_item_list{
                         width: 100%;
                         position: relative;
@@ -601,6 +636,9 @@ section{
                             position: absolute;
                             left: -5px;
                             top: 50%;
+                            @media (max-width:960px){
+                                top: 0%;
+                            }
                         }
                         .works_classic_year{
                             width: 240px;
@@ -615,6 +653,12 @@ section{
                             transform: translateY(-50%);
                             letter-spacing: 2px;
                             font-weight: 300;
+                            @media (max-width:960px){
+                                width: 100%;
+                                top: 0%;
+                                left: -110%;
+                                font-size: 4vw;
+                            }
                         }
                         .works_classic_name{
                             width: 240px;
@@ -627,10 +671,20 @@ section{
                             transform: translateY(-50%);
                             padding: 0 20px;
                             letter-spacing: 2px;
+                            @media (max-width:960px){
+                                position: relative;
+                                width: 100%;
+                                top: 10%;
+                                font-size: 4vw;
+                            }
                         }
                         .works_classic_photo{
                             width: calc( 100% - 260px );
                             float: right;
+                            @media (max-width:960px){
+                                width: 90%;
+                                margin: -5% auto 0;
+                            }
                         }
                     }
                 }
@@ -638,6 +692,10 @@ section{
                     width: 40%;
                     margin-left: 10%;
                     margin-top: -60px;
+                    @media (max-width:960px){
+                        margin-top: 0;
+                        padding: 5% 0;
+                    }
                     .works_classic_item_list{
                         width: 100%;
                         position: relative;
@@ -652,6 +710,9 @@ section{
                             position: absolute;
                             right: -5px;
                             top: 50%;
+                            @media (max-width:960px){
+                                top: 0%;
+                            }
                         }
                         .works_classic_year{
                             width: 240px;
@@ -666,6 +727,12 @@ section{
                             transform: translateY(-50%);
                             letter-spacing: 2px;
                             font-weight: 300;
+                            @media (max-width:960px){
+                                width: 100%;
+                                top: 0%;
+                                left: 110%;
+                                font-size: 4vw;
+                            }
                         }
                         .works_classic_name{
                             width: 240px;
@@ -678,10 +745,20 @@ section{
                             transform: translateY(-50%);
                             padding: 0 20px;
                             letter-spacing: 2px;
+                            @media (max-width:960px){
+                                position: relative;
+                                width: 100%;
+                                top: 10%;
+                                font-size: 4vw;
+                            }
                         }
                         .works_classic_photo{
                             width: calc( 100% - 260px );
                             float: left;
+                            @media (max-width:960px){
+                                width: 90%;
+                                margin: -5% auto 0;
+                            }
                         }
                     }
                 }

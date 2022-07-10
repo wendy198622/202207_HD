@@ -9,6 +9,9 @@ section{
         line-height: 1;
         font-weight: 600;
         letter-spacing: 6px;
+        @media (max-width:960px){
+            font-size: 5vw;            
+        }
     }
     h3{
         font-size: 22px;
@@ -16,6 +19,9 @@ section{
         font-weight: 200;
         letter-spacing: 1px;
         color: #a6936a;
+        @media (max-width:960px){
+            font-size: 2.6vw;            
+        }
     }
 
     .more, .send{
@@ -59,9 +65,15 @@ section{
                     url(../img/page_news_bg_bottom.jpg) center bottom no-repeat #f6f4f2;
         background-size: contain; 
         position: relative;
+        @media (max-width:960px){
+            padding-top: 20%;
+        }
         .news_title{
             width: 100%;
             padding: 40px 60px;
+            @media (max-width:960px){
+                padding: 40px 40px;;
+            }
             h2{ 
                 margin-top: 10px;
                 text-align: center;
@@ -80,6 +92,10 @@ section{
                 margin: 0 auto;
                 padding: 96px 160px 200px;
                 background: #fff;
+                @media (max-width:960px){
+                    width: 100%;
+                    padding: 8% 8% 24%;
+                }
                 li{
                     text-align: justify;
                     overflow: hidden;
@@ -166,6 +182,9 @@ section{
         .news_navigation{
             width: 102px;
             margin: -122px auto 0;
+            @media (max-width:960px){
+                margin: -14% auto 0;
+            }
             .page-link{
                 border-radius: 0;
                 width: 56px;
@@ -176,6 +195,12 @@ section{
                 line-height: 46px;
                 transition: all .3s;
                 background: transparent;
+                @media (max-width:960px){
+                    width: 6vw;
+                    height: 6vw;
+                    font-size: 3vw;
+                    line-height: 1.4;
+                }
                 &:focus, &:hover, &:active{
                     outline: 0;
                     box-shadow: none;
@@ -198,6 +223,9 @@ section{
             width: calc( 88% - 40px );
             height: 50px;
             margin: -60px auto 0;
+            @media (max-width:960px){
+                margin: -40px auto 0;
+            }
     
             .news_navigation_left{
                 width: 24%;

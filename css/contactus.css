@@ -280,12 +280,37 @@ input, button, textarea, select {
   display: none;
 }
 
+@media (max-width: 960px) {
+  .header nav .header_menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    float: unset;
+    background: #ccc;
+    padding-top: 20%;
+  }
+}
+
 .header nav .header_menu li {
   float: left;
   padding: 0 60px;
   border-right: 1px solid #000;
   font-size: 20px;
   line-height: 1.4;
+}
+
+@media (max-width: 960px) {
+  .header nav .header_menu li {
+    width: 100%;
+    float: unset;
+    text-align: center;
+    border-right: 0;
+    border-bottom: 1px solid #000;
+    font-size: 6vw;
+    line-height: 2.4;
+  }
 }
 
 .header nav .header_menu li:last-child {
@@ -446,12 +471,24 @@ section h2 {
   letter-spacing: 6px;
 }
 
+@media (max-width: 960px) {
+  section h2 {
+    font-size: 5vw;
+  }
+}
+
 section h3 {
   font-size: 22px;
   line-height: 1;
   font-weight: 200;
   letter-spacing: 1px;
   color: #a6936a;
+}
+
+@media (max-width: 960px) {
+  section h3 {
+    font-size: 2.6vw;
+  }
 }
 
 section .more, section .send {
@@ -505,6 +542,12 @@ section .page_contactus {
   background-size: cover;
 }
 
+@media (max-width: 960px) {
+  section .page_contactus {
+    padding-top: 20%;
+  }
+}
+
 section .page_contactus .contactus_title h2 {
   margin-top: 10px;
   text-align: center;
@@ -530,6 +573,12 @@ section .page_contactus .contactus_content .contactus_form {
   overflow: hidden;
 }
 
+@media (max-width: 960px) {
+  section .page_contactus .contactus_content .contactus_form {
+    padding: 40px 0;
+  }
+}
+
 section .page_contactus .contactus_content .contactus_form .contactus_form_item {
   width: calc( 50% - 80px);
   float: left;
@@ -539,8 +588,21 @@ section .page_contactus .contactus_content .contactus_form .contactus_form_item 
   overflow: hidden;
 }
 
+@media (max-width: 960px) {
+  section .page_contactus .contactus_content .contactus_form .contactus_form_item {
+    width: 100%;
+    margin: 0 10px 50px;
+  }
+}
+
 section .page_contactus .contactus_content .contactus_form .contactus_form_item.fullwidth {
   width: calc( 100% - 80px);
+}
+
+@media (max-width: 960px) {
+  section .page_contactus .contactus_content .contactus_form .contactus_form_item.fullwidth {
+    width: 100%;
+  }
 }
 
 section .page_contactus .contactus_content .contactus_form .contactus_form_item label {
@@ -655,6 +717,16 @@ section .page_contactus .contactus_content .contactus_form button {
   color: #a6936a;
   -webkit-transition: all .3s;
   transition: all .3s;
+}
+
+@media (max-width: 960px) {
+  section .page_contactus .contactus_content .contactus_form button {
+    position: relative;
+    right: unset;
+    bottom: unset;
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 section .page_contactus .contactus_content .contactus_form button:after {
