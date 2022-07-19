@@ -185,3 +185,29 @@ input, button, textarea, select{
   }
 }
 .slick-slide, .slick-slide *{ outline: none !important; }
+
+
+@keyframes gotop {
+  from{ transform: translateY(-3px);}
+  to{ transform: translateY(3px);}
+}
+
+@keyframes goleft {
+  from{ transform: translateX(0px);}
+  to{ transform: translateX(-10px);}
+}
+
+@keyframes goright {
+  from{ transform: translateX(0px);}
+  to{ transform: translateX(10px);}  
+}
+
+@keyframes goleftslow {
+  from{ transform: translateX(0px);}
+  to{ transform: translateX(-5px);}
+}
+
+@keyframes gorightslow {
+  from{ transform: translateX(0px);}
+  to{ transform: translateX(5px);}  
+}

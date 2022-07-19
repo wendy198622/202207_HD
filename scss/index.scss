@@ -87,7 +87,7 @@ section{
                 right: 165px;
                 z-index: 5;
                 @media (max-width:960px){
-                    bottom: 5px;
+                    bottom: -2px;
                     right: 125px;
                 }
                 &:before{
@@ -108,7 +108,7 @@ section{
                 right: 65px;
                 z-index: 5;
                 @media (max-width:960px){
-                    bottom: 5px;
+                    bottom: -2px;
                     right: 25px;
                 }
                 &:before{
@@ -133,8 +133,9 @@ section{
             text-align: center;
             letter-spacing: 3px;
             @media (max-width:960px){
-                bottom: 15px;
+                bottom: 10px;
                 right: 42px;
+                font-size: 4vw;
             }
             span{
                 color: #a6936a;
@@ -187,25 +188,40 @@ section{
                     width: 195px;
                     float: right;
                     padding: 0 40px;
+                    @media (max-width:960px){
+                        width: 120px;
+                        font-size: 4vw;
+                        line-height: 2.2;
+                        padding: 0 20px;
+                    }
                 }
                 &:before{
                     content: "";
-                    width: calc( 100% - 195px;);
+                    width: calc( 100% - 195px);
                     height: 1px;
                     background: #a6936a;
                     position: absolute;
                     top: 18px;
                     left: 20px;
+                    @media (max-width:960px){
+                        width: calc( 100% - 130px);
+                    }
                 }
                 &:after{
                     right: 65px;
                     // top: 4px;
+                    @media (max-width:960px){
+                        right: 20px;
+                    }
                 }
                 &:hover{
                     background-color: #fff;
-                    a{ color: #a6936a;}
+                    a{ 
+                        color: #a6936a;
+                    }
                     &:after{
                         border-color: transparent transparent transparent #a6936a;
+                        animation: gorightslow .5s alternate infinite linear both;
                     }
                 }
             }
@@ -214,35 +230,62 @@ section{
                 .home_works_photo_box{
                     .home_works_photo_item{
                         padding: 0 20px 40px;
+                        @media (max-width:960px){
+                            padding: 0 10px 40px;
+                        }
+                        .photo{
+                            position: relative;
+                            .cover{
+                                // width: 100%;
+                                height: 100%;
+                                display: block;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                background: #fff;
+                                animation: photocover 2s both;
+                            }
+                            @keyframes photocover {
+                                from{ width: 100%;}
+                                to{ width: 0%;}
+                            }
+                        }
                         .home_works_photo_item_caption{
-                            // width: 80%;
+                            width: 80%;
                             float: left;
                             margin-top: 50px;
+                            @media (max-width:960px){
+                                width: 100%;
+                                margin-top: 20px;  
+                            }
                             h5{
                                 margin-bottom: 12px;
                                 font-size: 26px;
                                 font-weight: 500;
                                 @media (max-width:960px){
-                                    font-size: 3vw;            
+                                    font-size: 3.6vw; 
+                                    margin-bottom: 6px;           
                                 }
                             }
                             p{
                                 font-size: 15px;
                                 color: #a6936a;
                                 @media (max-width:960px){
-                                    font-size: 2vw;            
+                                    font-size: 2.6vw;            
                                 }
                             }
                         }
                         .home_works_photo_item_year{
-                            // width: 20%;
+                            width: 20%;
                             float: right;
                             margin-top: 52px;
                             font-size: 32px;
                             color: #a6936a;
                             @media (max-width:960px){
+                                width: 100%;
                                 margin-top: 36px;
-                                font-size: 3.2vw;            
+                                font-size: 3.2vw;
+                                margin-top: 20px;         
                             }
                         }
                     }
@@ -259,6 +302,9 @@ section{
                     z-index: 5;
                     @media (max-width:960px){
                         left: -22%;
+                        width: 42px;
+                        height: 42px;
+                        bottom: 58px;
                     }
                     &:before{
                         width: 0;
@@ -271,6 +317,15 @@ section{
                         position: absolute;
                         top: 24px;
                         left: 24px;
+                        @media (max-width:960px){
+                            top: 14px;
+                            left: 14px;
+                        }
+                    }
+                    &:hover{
+                        &:before{
+                            animation: goleftslow .5s alternate infinite linear both;
+                        }
                     }
                 }
     
@@ -285,6 +340,8 @@ section{
                     z-index: 5;
                     @media (max-width:960px){
                         left: -22%;
+                        width: 42px;
+                        height: 42px;
                     }
                     &:before{
                         width: 0;
@@ -297,6 +354,15 @@ section{
                         position: absolute;
                         top: 24px;
                         left: 24px; 
+                        @media (max-width:960px){
+                            top: 14px;
+                            left: 14px;
+                        }
+                    }
+                    &:hover{
+                        &:before{
+                            animation: gorightslow .5s alternate infinite linear both;
+                        }
                     }
                 }
 
@@ -347,7 +413,11 @@ section{
                     text-align: justify;
                     overflow: hidden;
                     border-bottom: 1px dashed #a6936a;
-                    a{ color: #a6936a;}
+                    a{ 
+                        color: #a6936a;
+                        opacity: 1;
+                        transition: all .3s;
+                    }
                     span{ 
                         display: block; 
                         float: left;
@@ -365,6 +435,11 @@ section{
                         text-overflow: ellipsis;
                         white-space: nowrap;
                         -webkit-line-clamp: 1;
+                    }
+                    &:hover{
+                        a{ 
+                            opacity: .6;
+                        }
                     }
                 }
             }

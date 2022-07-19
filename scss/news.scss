@@ -139,6 +139,10 @@ section{
                     line-height: 1.4;
                     float: left;
                     margin-bottom: 20px;
+                    @media (max-width:960px){
+                        width: 100%;
+                        font-size: 4vw;
+                    }
                 }
 
                 .news_page_date{
@@ -147,6 +151,10 @@ section{
                     float: right;
                     text-align: right;
                     color: #a6936a;
+                    @media (max-width:960px){
+                        width: 100%;
+                        font-size: 3vw;
+                    }
                 }
 
                 hr{
@@ -175,7 +183,31 @@ section{
                         width: 50%;
                         float: left;
                         padding: 20px;
+                        @media (max-width:960px){
+                            width: 100%;
+                        }
                     }
+                }
+            }
+        }
+        .navback{
+            width: 200px;
+            margin: -122px auto 0;
+            text-align: center;
+            line-height: 46px;
+            transition: all .3s;
+            background: transparent;
+            border: 1px solid #000;
+            font-family: 'Noto Sans TC', sans-serif;
+            a{
+                font-size: 24px;
+                color: #a6936a;
+                font-weight: 300;
+                letter-spacing: 2px;
+            }
+            @media (max-width:960px){
+                a{
+                    font-size: 3vw;
                 }
             }
         }
@@ -234,6 +266,15 @@ section{
             .news_navigation_right{
                 width: 24%;
                 float: right;
+            }
+            &:hover{
+                cursor: pointer;
+                .news_navigation_left{
+                    animation: goleft .5s alternate infinite linear both;
+                }
+                .news_navigation_right{
+                    animation: goright .5s alternate infinite linear both;
+                }
             }
         }
     }

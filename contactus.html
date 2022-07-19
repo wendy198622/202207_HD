@@ -32,9 +32,9 @@
 	
     <header class="header clearfix">
     	<div class="header_logo">
-			<a href="/">
-				<img src="img/HD_logo.svg" alt="">
-			</a>
+            <a href="index.html">
+                <img src="img/HD_logo.svg" alt="">
+            </a>
 		</div>
 		<nav>
 			<div class="header_control">
@@ -91,6 +91,10 @@
 						<label for="phone">連絡電話 <span>*</span></label>
 						<input type="text" v-model="phone" name="phone" placeholder="" required />
 					</div>
+                    <div class="contactus_form_item fullwidth">
+                        <label for="email">E-mail <span>*</span></label>
+                        <input type="text" v-model="email" name="email" placeholder="" required />
+                    </div>
 					<div class="contactus_form_item fullwidth">
 						<label for="message">留言</label>
 						<textarea id="message" v-model="message" name="message" required></textarea>

@@ -48,6 +48,13 @@ footer{
             a{
                 color: #fff;
                 letter-spacing: 4px;
+                opacity: 1;
+                transition: all .3s;
+            }
+            &:hover{
+                a{
+                    opacity: .7;
+                }
             }
         }
     }
@@ -97,6 +104,9 @@ footer{
         }
         &:hover{
             cursor: pointer;
+            &:after{
+                animation: gotop 1s alternate infinite linear;
+            }
         }
     }
 }

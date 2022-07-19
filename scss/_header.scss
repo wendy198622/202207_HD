@@ -8,17 +8,25 @@
     // @media (max-width:800px){
     //     padding-bottom: 20px;
     // }
+    @media (max-width: 600px){
+        padding: 5%;
+    }
     .header_logo{
         width: 186px;
         height: 38px;
         float: left;
+        @media (max-width: 600px){
+            width: calc(186 / 600 * 100%);
+            height: auto;
+        }
     }
 
     nav{
         width: calc( 100% - 186px );
         float: right;
         padding: 10px 0;
-        @media (max-width:960px){
+        @media (max-width:600px){
+            width: calc(414 / 600 * 100%);
         }
         
 

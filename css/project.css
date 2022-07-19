@@ -254,6 +254,116 @@ input, button, textarea, select {
   outline: none !important;
 }
 
+@-webkit-keyframes gotop {
+  from {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+  }
+  to {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+}
+
+@keyframes gotop {
+  from {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+  }
+  to {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+}
+
+@-webkit-keyframes goleft {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+}
+
+@keyframes goleft {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+}
+
+@-webkit-keyframes goright {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes goright {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@-webkit-keyframes goleftslow {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+}
+
+@keyframes goleftslow {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+}
+
+@-webkit-keyframes gorightslow {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+}
+
+@keyframes gorightslow {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+}
+
 .header {
   position: fixed;
   z-index: 100;
@@ -262,16 +372,35 @@ input, button, textarea, select {
   padding: 45px;
 }
 
+@media (max-width: 600px) {
+  .header {
+    padding: 5%;
+  }
+}
+
 .header .header_logo {
   width: 186px;
   height: 38px;
   float: left;
 }
 
+@media (max-width: 600px) {
+  .header .header_logo {
+    width: calc(186 / 600 * 100%);
+    height: auto;
+  }
+}
+
 .header nav {
   width: calc( 100% - 186px);
   float: right;
   padding: 10px 0;
+}
+
+@media (max-width: 600px) {
+  .header nav {
+    width: calc(414 / 600 * 100%);
+  }
 }
 
 .header nav .header_menu {
@@ -454,6 +583,13 @@ footer .footer_menu li:last-child {
 footer .footer_menu li a {
   color: #fff;
   letter-spacing: 4px;
+  opacity: 1;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+footer .footer_menu li:hover a {
+  opacity: .7;
 }
 
 footer .copyright {
@@ -511,6 +647,11 @@ footer .gotop:after {
 
 footer .gotop:hover {
   cursor: pointer;
+}
+
+footer .gotop:hover:after {
+  -webkit-animation: gotop 1s alternate infinite linear;
+          animation: gotop 1s alternate infinite linear;
 }
 
 body {
