@@ -393,6 +393,7 @@ input, button, textarea, select {
 
 .header nav {
   width: calc( 100% - 186px);
+  height: 28px;
   float: right;
   padding: 10px 0;
 }
@@ -942,6 +943,7 @@ section .home_works .home_works_content .home_works_photo {
 
 section .home_works .home_works_content .home_works_photo .home_works_photo_box .home_works_photo_item {
   padding: 0 20px 40px;
+  overflow: hidden;
 }
 
 @media (max-width: 960px) {
@@ -951,7 +953,28 @@ section .home_works .home_works_content .home_works_photo .home_works_photo_box 
 }
 
 section .home_works .home_works_content .home_works_photo .home_works_photo_box .home_works_photo_item .photo {
+  width: 100%;
   position: relative;
+}
+
+section .home_works .home_works_content .home_works_photo .home_works_photo_box .home_works_photo_item .photo:after {
+  background-color: #000;
+  content: "";
+  display: block;
+  height: 5px;
+  left: 0;
+  position: absolute;
+  bottom: -5px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  width: 100%;
+  z-index: 10;
 }
 
 section .home_works .home_works_content .home_works_photo .home_works_photo_box .home_works_photo_item .photo .cover {
@@ -1035,6 +1058,13 @@ section .home_works .home_works_content .home_works_photo .home_works_photo_box 
     font-size: 3.2vw;
     margin-top: 20px;
   }
+}
+
+section .home_works .home_works_content .home_works_photo .home_works_photo_box .home_works_photo_item:hover .photo:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
 }
 
 section .home_works .home_works_content .home_works_photo .slick-prev {

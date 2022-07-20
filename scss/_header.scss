@@ -4,7 +4,7 @@
     top: 0;
     width: 100%;
     padding: 45px;
-    // background: #000;
+    // background: rgba(255,255,255,.8);
     // @media (max-width:800px){
     //     padding-bottom: 20px;
     // }
@@ -23,6 +23,7 @@
 
     nav{
         width: calc( 100% - 186px );
+        height: 28px;
         float: right;
         padding: 10px 0;
         @media (max-width:600px){

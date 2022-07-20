@@ -393,6 +393,7 @@ input, button, textarea, select {
 
 .header nav {
   width: calc( 100% - 186px);
+  height: 28px;
   float: right;
   padding: 10px 0;
 }
@@ -892,7 +893,6 @@ section .page_news .navback {
   width: 200px;
   margin: -122px auto 0;
   text-align: center;
-  line-height: 46px;
   -webkit-transition: all .3s;
   transition: all .3s;
   background: transparent;
@@ -901,10 +901,19 @@ section .page_news .navback {
 }
 
 section .page_news .navback a {
-  font-size: 24px;
+  font-size: 22px;
+  line-height: 2;
   color: #a6936a;
   font-weight: 300;
   letter-spacing: 2px;
+}
+
+section .page_news .navback:hover {
+  background-color: #000;
+}
+
+section .page_news .navback:hover a {
+  color: #fff;
 }
 
 @media (max-width: 960px) {

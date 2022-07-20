@@ -393,6 +393,7 @@ input, button, textarea, select {
 
 .header nav {
   width: calc( 100% - 186px);
+  height: 28px;
   float: right;
   padding: 10px 0;
 }

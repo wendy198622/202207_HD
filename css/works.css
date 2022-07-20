@@ -393,6 +393,7 @@ input, button, textarea, select {
 
 .header nav {
   width: calc( 100% - 186px);
+  height: 28px;
   float: right;
   padding: 10px 0;
 }
@@ -815,6 +816,26 @@ section .page_works .works_content .works_photo .works_photo_item a {
   overflow: hidden;
 }
 
+section .page_works .works_content .works_photo .works_photo_item .photo:after {
+  background-color: #000;
+  content: "";
+  display: block;
+  height: 5px;
+  left: 0;
+  position: absolute;
+  bottom: -5px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  width: 100%;
+  z-index: 10;
+}
+
 section .page_works .works_content .works_photo .works_photo_item .works_photo_item_caption {
   float: left;
   margin-top: 40px;
@@ -855,6 +876,13 @@ section .page_works .works_content .works_photo .works_photo_item .works_photo_i
     margin-top: 36px;
     font-size: 3.2vw;
   }
+}
+
+section .page_works .works_content .works_photo .works_photo_item:hover .photo:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
 }
 
 section .page_works.inner {
@@ -1311,7 +1339,7 @@ section .page_works_map iframe {
 section .page_works_classic {
   padding: 200px 0 60px;
   overflow: hidden;
-  background: url(../img/page_worksclassic_bg_top.jpg) center top no-repeat, url(../img/page_worksclassic_bg_bottom.jpg) center bottom no-repeat;
+  background: url(../img/page_worksclassic_bg.jpg) center top no-repeat;
   background-size: cover;
   position: relative;
 }

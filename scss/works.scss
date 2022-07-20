@@ -127,6 +127,22 @@ section{
                         width: calc( 100% / 2);
                     }
                     a{ overflow: hidden;}
+                    .photo{
+                        &:after{
+                            background-color: #000;
+                            content: "";
+                            display: block;
+                            height: 5px;
+                            left: 0;
+                            position: absolute;
+                            bottom: -5px;
+                            transform: scaleX(0);
+                            transform-origin: right center;
+                            transition: transform .5s cubic-bezier(.19,1,.22,1);
+                            width: 100%;
+                            z-index: 10;
+                        }
+                    }
                     .works_photo_item_caption{
                         // width: 80%;
                         float: left;
@@ -156,6 +172,14 @@ section{
                         @media (max-width:960px){
                             margin-top: 36px;
                             font-size: 3.2vw;            
+                        }
+                    }
+                    &:hover{
+                        .photo{
+                            &:after{
+                                transform: scaleX(1);
+                                transform-origin: left center;
+                            }
                         }
                     }
                 }
@@ -587,8 +611,7 @@ section{
     .page_works_classic{
         padding: 200px 0 60px;
         overflow: hidden;
-        background: url(../img/page_worksclassic_bg_top.jpg) center top no-repeat,
-                    url(../img/page_worksclassic_bg_bottom.jpg) center bottom no-repeat;
+        background: url(../img/page_worksclassic_bg.jpg) center top no-repeat;
         background-size: cover; 
         position: relative;
 
