@@ -309,16 +309,20 @@
 
 <script>
     $(document).ready(function() {
-        new WOW().init();
-        $(".imgLiquidFill").imgLiquid();
+        var menu_close = true
+        new WOW().init()
+
+        $(".imgLiquidFill").imgLiquid()
 
         $('.menu-btn').on('click', function() {
-            $('.header_menu').toggle(/*500,*/()=>{
-                $('.header').css('background','rgba(255,255,255,.8)')
-            },()=>{
-                $('.header').css('background','rgba(255,255,255,.8)')
-            });
-			;
+
+            $('.header_menu').toggle(500);
+            if(menu_close){
+                    $('.header').css('background','rgba(255,255,255,.8)')
+            }else{
+                    $('.header').css('background','rgba(255,255,255,0)')
+            }
+            menu_close = !menu_close
         });
 
         $(".gotop").on("click", function() {
