@@ -48,22 +48,49 @@
             }
             li{
                 float: left;
-                padding: 0 60px;
+                padding: 0 40px;
                 border-right: 1px solid #000;
                 font-size: 20px;
                 line-height: 1.4;
+                position: relative;
+                @media (max-width:1200px){
+                    padding: 0 30px;
+                }
                 @media (max-width:960px){
                     width: 100%;
                     float: unset;
+                    padding: 0 20px;
                     text-align: center;
                     border-right: 0;
-                    border-bottom: 1px solid #000;
-                    font-size: 6vw;
-                    line-height: 2.4;
+                    // border-bottom: 1px solid #000;
+                    // font-size: 18px;
+                    line-height: 3.2;
 
                 }
                 &:last-child{
                     border-right: 0;
+                }
+                &:after{
+                    content: '';
+                    width: 0%;
+                    height: 1px;
+                    background-color: #000;
+                    position: absolute;
+                    bottom: 0;
+                    // left: 10%;
+                    transition: all .3s;
+                }
+                &:hover{
+                    &:after{
+                        animation: navline 0.5s;
+                    }
+                    @keyframes navline {
+                        0%  { width: 0%; left: 10%;}
+                        49% { width: 80%; left: 10%;}
+                        51% { width: 80%; left: unset; right: 10%;}
+                        100%{ width: 0%; right: 10%;}
+                    }
+
                 }
             }
         }

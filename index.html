@@ -30,7 +30,7 @@
 <body>
 
     <header class="header clearfix">
-        <div class="header_logo">
+        <div class="header_logo wow fadeIn">
             <a href="index.html">
                 <img src="img/HD_logo.svg" alt="">
             </a>
@@ -41,7 +41,7 @@
                 <label class="menu-icon" for="menu-btn"><span id="navicon" class="navicon"></span></label>
             </div>
             <ul class="header_menu">
-                <li><a href="index.html">關於華登</a></li>
+                <li><a href="aboutus.html">關於華登</a></li>
                 <li><a href="works.html">個案作品</a></li>
                 <li><a href="news.html">最新消息</a></li>
                 <li><a href="contactus.html">聯絡我們</a></li>
@@ -51,7 +51,7 @@
 
     <section>
         <div class="home_event">
-            <div class="home_event_banner slide">
+            <div class="home_event_banner slide wow fadeIn">
                 <div class="home_event_banner_item">
                     <img src="img/event_01.jpg" alt="...">
                 </div>
@@ -71,11 +71,11 @@
     <section>
         <div class="home_works">
             <div class="home_works_title">
-                <h2>個案作品</h2>
-                <h3>WORKS</h3>
+                <h2 class="wow fadeInRight">個案作品</h2>
+                <h3 class="wow fadeInRight" data-wow-delay=".5s">WORKS</h3>
             </div>
             <div class="home_works_content">
-                <div class="more home_works_more">
+                <div class="more home_works_more wow fadeIn" data-wow-delay=".5s">
                     <a href="works.html">MORE</a>
                 </div>
                 <div class="home_works_photo">
@@ -178,33 +178,33 @@
     <section>
         <div class="home_news">
             <div class="home_news_title">
-                <h3>NEWS</h3>
-                <h2>最新消息</h2>
-                <div class="more home_news_more">
+                <h3 class="wow fadeInUp">NEWS</h3>
+                <h2 class="wow fadeInUp" data-wow-delay=".5s">最新消息</h2>
+                <div class="more home_news_more wow fadeIn" data-wow-delay="1s">
                     <a href="news.html">MORE</a>
                 </div>
             </div>
             <div class="home_news_content">
                 <ul class="home_news_item">
-                    <li>
+                    <li class="wow fadeInUp">
                         <a href="news-page.html">
                             <span class="news_date">2022.02.25</span>
                             <span class="news_title">華登建設投資興建，基地位於大園區環區西路與科二街，預計2022年4月公開銷售。</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="wow fadeInUp" data-wow-delay=".5s">
                         <a href="news-page.html">
                             <span class="news_date">2022.02.25</span>
                             <span class="news_title">由華登建設所投資興建的「華登天囍」，地點位於尖山路122號，基地面積644坪，規劃A、B兩棟地上14樓、地下，基地面積644坪，規劃A、B兩棟地上14樓</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="wow fadeInUp" data-wow-delay="1s">
                         <a href="news-page.html">
                             <span class="news_date">2022.02.25</span>
                             <span class="news_title">華登建設投資興建，基地位於大園區環區西路與科二街，預計2022年4月公開銷售。</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="wow fadeInUp" data-wow-delay="1.5s">
                         <a href="news-page.html">
                             <span class="news_date">2022.02.25</span>
                             <span class="news_title">由華登建設所投資興建的「華登天囍」，地點位於尖山路122號，基地面積644坪，規劃A、B兩棟地上14樓、地下，基地面積644坪，規劃A、B兩棟地上14樓</span>
@@ -218,13 +218,13 @@
     <section>
         <div class="home_contactus">
             <div class="home_contactus_title">
-                <h3>CONTACT US</h3>
-                <h2>聯絡我們</h2>
-                <p>若您有任何客服意見留言、購屋及建案相關問題詢問，歡迎您填寫左方表單與我們聯絡。<span>* 欄位表示必填</span></p>
-            </div>
+				<h3 class="wow fadeInUp">CONTACT US</h3>
+				<h2 class="wow fadeInDown">聯絡我們</h2>
+				<p class="wow fadeInDown" data-wow-delay=".5s">若您有任何客服意見留言、購屋及建案相關問題詢問，歡迎您填寫左方表單與我們聯絡。<span>* 欄位表示必填</span></p>
+			</div>
             <div class="home_contactus_content">
                 <div class="home_contactus_form">
-                    <div class="home_contactus_form_item select">
+                    <div class="home_contactus_form_item select wow fadeInUp">
                         <label for="name">預約個案 <span>*</span></label>
                         <select>
 							<option>請選擇建案</option>
@@ -236,11 +236,11 @@
 							<option>Goldfish</option>
 						</select>
                     </div>
-                    <div class="home_contactus_form_item">
+                    <div class="home_contactus_form_item wow fadeInUp" data-wow-delay=".3s">
                         <label for="name">姓名 <span>*</span></label>
                         <input type="text" v-model="name" name="name" placeholder="" required />
                     </div>
-                    <div class="home_contactus_form_item">
+                    <div class="home_contactus_form_item wow fadeInUp" data-wow-delay=".5s">
                         <label for="name">聯絡時段 <span>*</span></label>
                         <select>
 							<option>請選擇時段</option>
@@ -252,23 +252,23 @@
 							<option>Goldfish</option>
 						</select>
                     </div>
-                    <div class="home_contactus_form_item">
+                    <div class="home_contactus_form_item wow fadeInUp" data-wow-delay=".7s">
                         <label for="phone">連絡電話 <span>*</span></label>
                         <input type="text" v-model="phone" name="phone" placeholder="" required />
                     </div>
-                    <div class="home_contactus_form_item fullwidth">
+                    <div class="home_contactus_form_item fullwidth wow fadeInDown" data-wow-delay="1s">
                         <label for="email">E-mail <span>*</span></label>
                         <input type="text" v-model="email" name="email" placeholder="" required />
                     </div>
-                    <div class="home_contactus_form_item fullwidth">
+                    <div class="home_contactus_form_item fullwidth wow fadeInDown" data-wow-delay="1.3s">
                         <label for="message">留言</label>
                         <textarea id="message" v-model="message" name="message" required></textarea>
                     </div>
-                    <div class="home_contactus_form_item fullwidth">
+                    <div class="home_contactus_form_item fullwidth wow fadeInLeft">
                         <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" v-model="check">
                         <label for="checkbox" class="checktxt">我同意通過電話方式與我聯絡 <a href="#">隱私權政策規範</a></label>
                     </div>
-                    <button class="send">確認送出</button>
+                    <button class="send wow fadeInRight">確認送出</button>
                 </div>
             </div>
         </div>
@@ -295,7 +295,7 @@
             </a>
         </div>
         <ul class="footer_menu">
-            <li><a href="index.html">關於華登</a></li>
+            <li><a href="aboutus.html">關於華登</a></li>
             <li><a href="works.html">個案作品</a></li>
             <li><a href="news.html">最新消息</a></li>
             <li><a href="contactus.html">聯絡我們</a></li>
@@ -343,6 +343,7 @@
             dots: false,
             autoplay: true,
             autoplaySpeed: 2000,
+            fade: true,
             slidesToShow: 1,
             slidesToScroll: 1
         });

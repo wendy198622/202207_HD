@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>華登建設-Aboutus</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="Resource-type" content="" />
+	<!-- <link rel="icon" href="img/logo.ico"> -->
+	<meta property="og:image"
+		content="https://neo-vision.com.tw.61-221-12-56.dolphin.potia.net/web/img/index/1200x628.jpg">
+	
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/aboutus.css" />
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="js/imgLiquid-min.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+
+</head>
+
+
+<body>
+	
+    <header class="header clearfix">
+        <div class="header_logo wow fadeIn">
+            <a href="index.html">
+                <img src="img/HD_logo.svg" alt="">
+            </a>
+		</div>
+		<nav>
+			<div class="header_control">
+				<input class="menu-btn" type="checkbox" id="menu-btn" />
+				<label class="menu-icon" for="menu-btn"><span id="navicon" class="navicon"></span></label>
+			</div>
+			<ul class="header_menu">
+				<li><a href="aboutus.html">關於華登</a></li>
+				<li><a href="works.html">個案作品</a></li>
+				<li><a href="news.html">最新消息</a></li>
+				<li><a href="contactus.html">聯絡我們</a></li>
+			</ul>
+        </nav>
+    </header>
+
+	<section>
+		<div class="page_aboutus">
+			<div class="aboutus_title">
+				<h2 class="wow fadeInLeft">關於華登</h2>
+				<h3 class="wow fadeInLeft">ABOUT US</h3>
+			</div>
+			<div class="aboutus_content">
+				<p>華登建設於2005年於鶯歌成立，迄今已邁入第17年。持續深耕於新北鶯歌、桃園中壢、平鎮、觀音等區域，自2006年陸續推出十多個建案，<br>
+						包括透天型產品如：華登金捷殿(2014年)、時尚美墅(2015年)，以及大樓型產品如華登天囍(2019年)、華登天美(2020年)等，<br>
+						可以說過去的十多年裡，華登奠定了非常扎實的建築經驗，也成為深獲好評的在地口碑建商。</p>
+						
+				<p>我們相信「建築總會如實反映出建造者」，一向以踏實、誠信、穩扎穩打自豪的華登建設，<br>
+						一直以來從不會打高空、畫大餅，我們認為房子既然是蓋來住的，那麼從內而外就必須站在購屋者、居住者的角度出發，把每棟建築當成自己要住的房子來規劃。</p>
+
+
+				<div class="video">
+					<video width="100%" height="100%" preload autoplay muted loop>
+						<source src="img/video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>	
+		
+		</div>
+	</section>
+	
+	<footer>
+		<div class="footer_logo">
+			<a href="/">
+				<img src="img/HD_logo_icon.svg" alt="">
+				<p>華登建設股份有限公司</p>
+			</a>
+		</div>
+		<ul class="footer_menu">
+			<li><a href="aboutus.html">關於華登</a></li>
+			<li><a href="works.html">個案作品</a></li>
+			<li><a href="news.html">最新消息</a></li>
+			<li><a href="contactus.html">聯絡我們</a></li>
+		</ul>
+		<p class="copyright">華登建設股份有限公司版權所有©Cathay Real Estate All Right Reserved.</p>
+		<div class="gotop">
+			SCROLL TOP
+		</div>
+	</footer>
+</body>
+
+<script>
+	$(document).ready(function () {
+        var menu_close = true
+        new WOW().init()
+
+        $(".imgLiquidFill").imgLiquid()
+
+        $('.menu-btn').on('click', function() {
+
+            $('.header_menu').toggle(500);
+            if(menu_close){
+                    $('.header').css('background','rgba(255,255,255,.8)')
+            }else{
+                    $('.header').css('background','rgba(255,255,255,0)')
+            }
+            menu_close = !menu_close
+        });
+
+		$(".gotop").on("click", function () {
+			$("html, body").animate({ scrollTop: 0 }, 500);
+		});
+
+		$(".works_tab li").on("click", function () {
+			$(this).addClass('active').siblings().removeClass("active");
+		});
+	});
+
+</script>
+</html>

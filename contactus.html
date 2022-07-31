@@ -31,7 +31,7 @@
 <body>
 	
     <header class="header clearfix">
-    	<div class="header_logo">
+        <div class="header_logo wow fadeIn">
             <a href="index.html">
                 <img src="img/HD_logo.svg" alt="">
             </a>
@@ -42,7 +42,7 @@
 				<label class="menu-icon" for="menu-btn"><span id="navicon" class="navicon"></span></label>
 			</div>
 			<ul class="header_menu">
-				<li><a href="#">關於華登</a></li>
+				<li><a href="aboutus.html">關於華登</a></li>
 				<li><a href="works.html">個案作品</a></li>
 				<li><a href="news.html">最新消息</a></li>
 				<li><a href="contactus.html">聯絡我們</a></li>
@@ -53,13 +53,13 @@
 	<section>
 		<div class="page_contactus">
 			<div class="contactus_title">
-				<h3>CONTACT US</h3>
-				<h2>聯絡我們</h2>
-				<p>若您有任何客服意見留言、購屋及建案相關問題詢問，歡迎您填寫左方表單與我們聯絡。<span>* 欄位表示必填</span></p>
+				<h3 class="wow fadeInUp">CONTACT US</h3>
+				<h2 class="wow fadeInDown">聯絡我們</h2>
+				<p class="wow fadeInDown" data-wow-delay=".5s">若您有任何客服意見留言、購屋及建案相關問題詢問，歡迎您填寫左方表單與我們聯絡。<span>* 欄位表示必填</span></p>
 			</div>
 			<div class="contactus_content">
 				<div class="contactus_form">
-					<div class="contactus_form_item select">
+					<div class="contactus_form_item select wow fadeInUp">
 						<label for="name">預約個案 <span>*</span></label>
 						<select>
 							<option>請選擇建案</option>
@@ -71,11 +71,11 @@
 							<option>Goldfish</option>
 						</select>
 					</div>
-					<div class="contactus_form_item">
+					<div class="contactus_form_item wow fadeInUp" data-wow-delay=".3s">
 						<label for="name">姓名 <span>*</span></label>
 						<input type="text" v-model="name" name="name" placeholder="" required />
 					</div>
-					<div class="contactus_form_item">
+					<div class="contactus_form_item wow fadeInUp" data-wow-delay=".5s">
 						<label for="name">聯絡時段 <span>*</span></label>
 						<select>
 							<option>請選擇時段</option>
@@ -87,23 +87,23 @@
 							<option>Goldfish</option>
 						</select>
 					</div>
-					<div class="contactus_form_item">
+					<div class="contactus_form_item wow fadeInUp" data-wow-delay=".7s">
 						<label for="phone">連絡電話 <span>*</span></label>
 						<input type="text" v-model="phone" name="phone" placeholder="" required />
 					</div>
-                    <div class="contactus_form_item fullwidth">
+                    <div class="contactus_form_item fullwidth wow fadeInDown" data-wow-delay="1s">
                         <label for="email">E-mail <span>*</span></label>
                         <input type="text" v-model="email" name="email" placeholder="" required />
                     </div>
-					<div class="contactus_form_item fullwidth">
+					<div class="contactus_form_item fullwidth wow fadeInDown" data-wow-delay="1.3s">
 						<label for="message">留言</label>
 						<textarea id="message" v-model="message" name="message" required></textarea>
 					</div>
-					<div class="contactus_form_item fullwidth">
+					<div class="contactus_form_item fullwidth wow fadeInLeft">
 						<input type="checkbox" id="checkbox" name="checkbox" value="checkbox" v-model="check">
 						<label for="checkbox" class="checktxt">我同意通過電話方式與我聯絡 <a href="#">隱私權政策規範</a></label>
 					</div>
-					<button class="send">確認送出</button>
+					<button class="send wow fadeInRight">確認送出</button>
 				</div>
 			</div>
 		</div>
@@ -131,7 +131,7 @@
 			</a>
 		</div>
 		<ul class="footer_menu">
-			<li><a href="#">關於華登</a></li>
+			<li><a href="aboutus.html">關於華登</a></li>
 			<li><a href="works.html">個案作品</a></li>
 			<li><a href="news.html">最新消息</a></li>
 			<li><a href="contactus.html">聯絡我們</a></li>

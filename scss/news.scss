@@ -110,6 +110,7 @@ section{
                         padding: 20px 0;
                         color: #a6936a;
                         overflow: hidden;
+                        transition: all .3s;
                     }
                     span{ 
                         display: block; 
@@ -138,6 +139,9 @@ section{
                             line-height: 1.3;
                             margin-top: 10px;
                         }
+                    }
+                    &:hover{
+                        a{ opacity: .4;}
                     }
                 }
             }
