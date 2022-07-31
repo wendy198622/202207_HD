@@ -843,6 +843,13 @@ section .page_news .news_content .news_item li .news_item_date {
   line-height: 1;
 }
 
+@media (max-width: 600px) {
+  section .page_news .news_content .news_item li .news_item_date {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
 section .page_news .news_content .news_item li .news_item_title {
   width: calc( 100% - 140px);
   font-size: 18px;
@@ -851,6 +858,15 @@ section .page_news .news_content .news_item li .news_item_title {
   text-overflow: ellipsis;
   white-space: nowrap;
   -webkit-line-clamp: 1;
+}
+
+@media (max-width: 600px) {
+  section .page_news .news_content .news_item li .news_item_title {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.3;
+    margin-top: 10px;
+  }
 }
 
 section .page_news .news_content .news_page_inner {
