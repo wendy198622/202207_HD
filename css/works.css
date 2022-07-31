@@ -552,6 +552,12 @@ footer .footer_logo p {
   }
 }
 
+@media (max-width: 600px) {
+  footer .footer_logo p {
+    font-size: 18px;
+  }
+}
+
 footer .footer_menu {
   font-size: 20px;
   line-height: 1;
@@ -562,8 +568,14 @@ footer .footer_menu {
 
 @media (max-width: 960px) {
   footer .footer_menu {
-    font-size: 3vw;
+    font-size: 24px;
     margin-bottom: 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  footer .footer_menu {
+    font-size: 16px;
   }
 }
 
@@ -637,6 +649,13 @@ footer .gotop {
   }
 }
 
+@media (max-width: 600px) {
+  footer .gotop {
+    width: 160px;
+    font-size: 16px;
+  }
+}
+
 footer .gotop:after {
   content: "";
   width: 0;
@@ -647,6 +666,12 @@ footer .gotop:after {
   border-color: transparent transparent #fff transparent;
   opacity: 1;
   margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+  footer .gotop:after {
+    border-width: 0 5px 10px 5px;
+  }
 }
 
 footer .gotop:hover {
