@@ -10,7 +10,7 @@ section{
         font-weight: 600;
         letter-spacing: 6px;
         @media (max-width:960px){
-            font-size: 5vw;            
+            font-size: 7.2vw;      
         }
     }
     h3{
@@ -299,17 +299,13 @@ section{
                 }
                 .works_page_title{
                     margin-top: 60px;
-                    h4{
-                        font-size: 28px;
-                        letter-spacing: 1px;
-                    }
-                    p{
-                        font-size: 20px;
+                    h1,h2,h3,h4,h5,h6,p{
                         letter-spacing: 1px;
                         line-height: 1.8;
+                    }
+                    p{
                         font-family: 'Noto Sans TC', sans-serif;
                         font-weight: 300;
-                        padding: 10px 0;
                     }
                 }
                 .works_page_photo{
@@ -317,15 +313,14 @@ section{
                         padding: 0;
                         overflow: hidden;
                         li{
-                            width: calc( (100% - 32px) / 3 );
-                            margin-right: 16px;
+                            box-sizing: border-box;
                             float: left;
                             &:last-child{ margin-right: 0;}
                             position: relative;
                             span{
                                 position: absolute;
                                 bottom: 10px;
-                                left: 10px;
+                                left: 18px;
                                 color: #fff;
                                 font-size: 14px;
                                 font-family: 'Noto Sans TC', sans-serif;

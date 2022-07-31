@@ -370,6 +370,8 @@ input, button, textarea, select {
   top: 0;
   width: 100%;
   padding: 45px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 @media (max-width: 600px) {
@@ -546,7 +548,7 @@ footer .footer_logo p {
 
 @media (max-width: 960px) {
   footer .footer_logo p {
-    font-size: 4.8vw;
+    font-size: 36px;
   }
 }
 
@@ -629,8 +631,9 @@ footer .gotop {
 @media (max-width: 960px) {
   footer .gotop {
     right: 0;
-    font-size: 4vw;
-    width: 150px;
+    font-size: 24px;
+    width: 230px;
+    bottom: 84px;
   }
 }
 
@@ -664,7 +667,7 @@ section h2 {
 
 @media (max-width: 960px) {
   section h2 {
-    font-size: 5vw;
+    font-size: 7.2vw;
   }
 }
 
@@ -957,18 +960,14 @@ section .page_works.inner .works_page_inner .works_page_title {
   margin-top: 60px;
 }
 
-section .page_works.inner .works_page_inner .works_page_title h4 {
-  font-size: 28px;
+section .page_works.inner .works_page_inner .works_page_title h1, section .page_works.inner .works_page_inner .works_page_title h2, section .page_works.inner .works_page_inner .works_page_title h3, section .page_works.inner .works_page_inner .works_page_title h4, section .page_works.inner .works_page_inner .works_page_title h5, section .page_works.inner .works_page_inner .works_page_title h6, section .page_works.inner .works_page_inner .works_page_title p {
   letter-spacing: 1px;
+  line-height: 1.8;
 }
 
 section .page_works.inner .works_page_inner .works_page_title p {
-  font-size: 20px;
-  letter-spacing: 1px;
-  line-height: 1.8;
   font-family: 'Noto Sans TC', sans-serif;
   font-weight: 300;
-  padding: 10px 0;
 }
 
 section .page_works.inner .works_page_inner .works_page_photo ul {
@@ -977,8 +976,8 @@ section .page_works.inner .works_page_inner .works_page_photo ul {
 }
 
 section .page_works.inner .works_page_inner .works_page_photo ul li {
-  width: calc( (100% - 32px) / 3);
-  margin-right: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   float: left;
   position: relative;
 }
@@ -990,7 +989,7 @@ section .page_works.inner .works_page_inner .works_page_photo ul li:last-child {
 section .page_works.inner .works_page_inner .works_page_photo ul li span {
   position: absolute;
   bottom: 10px;
-  left: 10px;
+  left: 18px;
   color: #fff;
   font-size: 14px;
   font-family: 'Noto Sans TC', sans-serif;

@@ -370,6 +370,8 @@ input, button, textarea, select {
   top: 0;
   width: 100%;
   padding: 45px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 @media (max-width: 600px) {
@@ -546,7 +548,7 @@ footer .footer_logo p {
 
 @media (max-width: 960px) {
   footer .footer_logo p {
-    font-size: 4.8vw;
+    font-size: 36px;
   }
 }
 
@@ -629,8 +631,9 @@ footer .gotop {
 @media (max-width: 960px) {
   footer .gotop {
     right: 0;
-    font-size: 4vw;
-    width: 150px;
+    font-size: 24px;
+    width: 230px;
+    bottom: 84px;
   }
 }
 
@@ -664,7 +667,7 @@ section h2 {
 
 @media (max-width: 960px) {
   section h2 {
-    font-size: 5vw;
+    font-size: 7.2vw;
   }
 }
 

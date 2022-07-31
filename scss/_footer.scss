@@ -21,7 +21,7 @@ footer{
             margin-top: 24px;
             letter-spacing: 2px;
             @media (max-width:960px){
-                font-size: 4.8vw;
+                font-size: 36px;
             }
         }
     }
@@ -88,8 +88,10 @@ footer{
         background-color: #a6936a;
         @media (max-width:960px){
             right: 0;
-            font-size: 4vw;
-            width: 150px;
+            font-size: 24px;
+            width: 230px;
+            bottom: 84px;
+
         }
         &:after{
             content: "";
