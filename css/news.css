@@ -1002,14 +1002,23 @@ section .page_news .navback:hover a {
 }
 
 section .page_news .news_navigation {
-  width: 102px;
-  margin: -122px auto 0;
+  width: 100%;
+  text-align: center;
+  margin-top: -122px;
 }
 
 @media (max-width: 960px) {
   section .page_news .news_navigation {
-    margin: -14% auto 0;
+    margin-top: -14%;
   }
+}
+
+section .page_news .news_navigation .pagination {
+  display: inline-block;
+}
+
+section .page_news .news_navigation .pagination li {
+  float: left;
 }
 
 section .page_news .news_navigation .page-link {

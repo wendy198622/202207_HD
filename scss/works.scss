@@ -554,8 +554,14 @@ section{
             }
         }
         .works_navigation{
-            width: 102px;
-            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+            // width: 102px;
+            // margin: 0 auto;
+            .pagination{
+                display: inline-block;
+                li{ float: left;}
+            }
             .page-link{
                 border-radius: 0;
                 width: 56px;
@@ -566,6 +572,7 @@ section{
                 line-height: 46px;
                 transition: all .3s;
                 background: transparent;
+                display: inline-block;
                 @media (max-width:960px){
                     width: 42px;
                     height: 42px;

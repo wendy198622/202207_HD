@@ -1312,8 +1312,16 @@ section .page_works.inner .works_page_inner .works_page_introduce .works_page_co
 }
 
 section .page_works .works_navigation {
-  width: 102px;
-  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+section .page_works .works_navigation .pagination {
+  display: inline-block;
+}
+
+section .page_works .works_navigation .pagination li {
+  float: left;
 }
 
 section .page_works .works_navigation .page-link {
@@ -1327,6 +1335,7 @@ section .page_works .works_navigation .page-link {
   -webkit-transition: all .3s;
   transition: all .3s;
   background: transparent;
+  display: inline-block;
 }
 
 @media (max-width: 960px) {
