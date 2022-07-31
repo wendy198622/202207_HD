@@ -1027,10 +1027,18 @@ section .page_news .news_navigation .page-link {
 
 @media (max-width: 960px) {
   section .page_news .news_navigation .page-link {
-    width: 6vw;
-    height: 6vw;
-    font-size: 3vw;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
     line-height: 1.4;
+  }
+}
+
+@media (max-width: 600px) {
+  section .page_news .news_navigation .page-link {
+    width: 32px;
+    height: 32px;
+    font-size: 15px;
   }
 }
 
