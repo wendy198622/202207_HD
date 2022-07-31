@@ -1524,6 +1524,7 @@ section .home_contactus .home_contactus_content .home_contactus_form .home_conta
   border-bottom: 1px solid #a6936a;
   color: #a6936a;
   font-size: 18px;
+  border-radius: 0;
 }
 
 @media (max-width: 600px) {
