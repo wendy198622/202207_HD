@@ -653,6 +653,7 @@ footer .gotop {
   footer .gotop {
     width: 160px;
     font-size: 16px;
+    bottom: 64px;
   }
 }
 
