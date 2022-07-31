@@ -1127,7 +1127,7 @@ section .home_works .home_works_content .home_works_photo .home_works_photo_box 
 
 @media (max-width: 600px) {
   section .home_works .home_works_content .home_works_photo .home_works_photo_box .home_works_photo_item .home_works_photo_item_caption h5 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -1144,7 +1144,7 @@ section .home_works .home_works_content .home_works_photo .home_works_photo_box 
 
 @media (max-width: 600px) {
   section .home_works .home_works_content .home_works_photo .home_works_photo_box .home_works_photo_item .home_works_photo_item_caption p {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
