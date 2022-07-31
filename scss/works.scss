@@ -10,7 +10,10 @@ section{
         font-weight: 600;
         letter-spacing: 6px;
         @media (max-width:960px){
-            font-size: 7.2vw;      
+            font-size: 36px;          
+        }
+        @media (max-width:600px){
+            font-size: 28px;          
         }
     }
     h3{
@@ -20,7 +23,10 @@ section{
         letter-spacing: 1px;
         color: #a6936a;
         @media (max-width:960px){
-            font-size: 2.6vw;            
+            font-size: 18px;             
+        }
+        @media (max-width:600px){
+            font-size: 14px;          
         }
     }
 
@@ -125,6 +131,7 @@ section{
                     float: left;
                     @media (max-width:960px){
                         width: calc( 100% / 2);
+                        padding: 0 10px 40px;
                     }
                     a{ overflow: hidden;}
                     .photo{
@@ -147,19 +154,31 @@ section{
                         // width: 80%;
                         float: left;
                         margin-top: 40px;
+                        @media (max-width:600px){
+                            width: 100%;
+                            float: unset;
+                            margin-top: 20px;
+                        }
                         h5{
                             margin-bottom: 12px;
                             font-size: 26px;
                             font-weight: 500;
                             @media (max-width:960px){
-                                font-size: 3vw;            
+                                font-size: 32px; 
+                                margin-bottom: 3px;
+                            }
+                            @media (max-width:600px){
+                                font-size: 18px;
                             }
                         }
                         p{
                             font-size: 15px;
                             color: #a6936a;
                             @media (max-width:960px){
-                                font-size: 2vw;            
+                                font-size: 24px;           
+                            }
+                            @media (max-width:600px){
+                                font-size: 14px;
                             }
                         }
                     }
@@ -170,8 +189,14 @@ section{
                         font-size: 32px;
                         color: #a6936a;
                         @media (max-width:960px){
+                            width: 100%;
                             margin-top: 36px;
-                            font-size: 3.2vw;            
+                            font-size: 24px;
+                            margin-top: 20px;         
+                        }
+                        @media (max-width:600px){
+                            font-size: 16px;
+                            margin-top: 0px;
                         }
                     }
                     &:hover{
@@ -621,6 +646,9 @@ section{
                 top: 320px;
                 left: 50%;
                 margin-left: -2px;
+                @media (max-width:600px){
+                    width: 2px;
+                }
             }
             .works_classic_logo{
                 width: 400px;
@@ -666,6 +694,9 @@ section{
                             @media (max-width:960px){
                                 top: 0%;
                             }
+                            @media (max-width:600px){
+                                left: -6px;
+                            }
                         }
                         .works_classic_year{
                             width: 240px;
@@ -684,7 +715,9 @@ section{
                                 width: 100%;
                                 top: 0%;
                                 left: -110%;
-                                font-size: 4vw;
+                            }
+                            @media (max-width:600px){
+                                font-size: 18px;
                             }
                         }
                         .works_classic_name{
@@ -702,7 +735,9 @@ section{
                                 position: relative;
                                 width: 100%;
                                 top: 10%;
-                                font-size: 4vw;
+                            }
+                            @media (max-width:600px){
+                                font-size: 18px;
                             }
                         }
                         .works_classic_photo{
@@ -739,6 +774,9 @@ section{
                             top: 50%;
                             @media (max-width:960px){
                                 top: 0%;
+                            }
+                            @media (max-width:600px){
+                                right: -4px;
                             }
                         }
                         .works_classic_year{

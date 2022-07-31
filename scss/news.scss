@@ -10,7 +10,10 @@ section{
         font-weight: 600;
         letter-spacing: 6px;
         @media (max-width:960px){
-            font-size: 7.2vw;            
+            font-size: 36px;          
+        }
+        @media (max-width:600px){
+            font-size: 28px;          
         }
     }
     h3{
@@ -20,7 +23,10 @@ section{
         letter-spacing: 1px;
         color: #a6936a;
         @media (max-width:960px){
-            font-size: 2.6vw;            
+            font-size: 18px;             
+        }
+        @media (max-width:600px){
+            font-size: 14px;          
         }
     }
 

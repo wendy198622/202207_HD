@@ -693,7 +693,13 @@ section h2 {
 
 @media (max-width: 960px) {
   section h2 {
-    font-size: 7.2vw;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  section h2 {
+    font-size: 28px;
   }
 }
 
@@ -707,7 +713,13 @@ section h3 {
 
 @media (max-width: 960px) {
   section h3 {
-    font-size: 2.6vw;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  section h3 {
+    font-size: 14px;
   }
 }
 
