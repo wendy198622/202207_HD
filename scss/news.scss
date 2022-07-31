@@ -148,6 +148,11 @@ section{
                 padding: 96px 60px 200px;
                 background: #fff;
                 overflow: hidden;
+                @media (max-width:960px){
+                    width: 100%;
+                    margin: 0 auto;
+                    padding: 96px 40px 200px;
+                }
                 .news_page_title{
                     width: calc(100% - 200px);
                     font-size: 28px;
@@ -157,7 +162,7 @@ section{
                     margin-bottom: 20px;
                     @media (max-width:960px){
                         width: 100%;
-                        font-size: 4vw;
+                        font-size: 22px;
                     }
                 }
 
@@ -169,7 +174,7 @@ section{
                     color: #a6936a;
                     @media (max-width:960px){
                         width: 100%;
-                        font-size: 3vw;
+                        font-size: 18px;
                     }
                 }
 
@@ -187,12 +192,18 @@ section{
                         width: 100%;
                         float: left;
                         padding: 20px;
+                        @media (max-width:960px){
+                            padding: 0;
+                        }
                         p{
                             width: 100%;
                             font-size: 18px;
                             line-height: 1.6;
                             letter-spacing: 1px;
                             text-align: justify;
+                            @media (max-width:960px){
+                                font-size: 16px;
+                            }
                         }
                     }
                     > div[width="50%"]{
