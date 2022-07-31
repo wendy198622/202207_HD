@@ -693,7 +693,13 @@ section h2 {
 
 @media (max-width: 960px) {
   section h2 {
-    font-size: 7.2vw;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  section h2 {
+    font-size: 28px;
   }
 }
 
@@ -707,7 +713,13 @@ section h3 {
 
 @media (max-width: 960px) {
   section h3 {
-    font-size: 2.6vw;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  section h3 {
+    font-size: 14px;
   }
 }
 
@@ -728,6 +740,12 @@ section .more a, section .send a {
   transition: all .3s;
 }
 
+@media (max-width: 600px) {
+  section .more a, section .send a {
+    font-size: 16px;
+  }
+}
+
 section .more:after, section .send:after {
   content: "";
   width: 0;
@@ -741,6 +759,13 @@ section .more:after, section .send:after {
   top: 13px;
   -webkit-transition: all .3s;
   transition: all .3s;
+}
+
+@media (max-width: 600px) {
+  section .more:after, section .send:after {
+    border-width: 5px 0 5px 10px;
+    top: 12px;
+  }
 }
 
 section .more:hover, section .send:hover {
@@ -783,6 +808,12 @@ section .page_contactus .contactus_title p {
   margin: 30px 0;
 }
 
+@media (max-width: 600px) {
+  section .page_contactus .contactus_title p {
+    font-size: 14px;
+  }
+}
+
 section .page_contactus .contactus_title p span {
   color: #a6936a;
 }
@@ -815,6 +846,12 @@ section .page_contactus .contactus_content .contactus_form .contactus_form_item 
   }
 }
 
+@media (max-width: 600px) {
+  section .page_contactus .contactus_content .contactus_form .contactus_form_item {
+    font-size: 18px;
+  }
+}
+
 section .page_contactus .contactus_content .contactus_form .contactus_form_item.fullwidth {
   width: calc( 100% - 80px);
 }
@@ -837,6 +874,12 @@ section .page_contactus .contactus_content .contactus_form .contactus_form_item 
   font-size: 16px;
 }
 
+@media (max-width: 600px) {
+  section .page_contactus .contactus_content .contactus_form .contactus_form_item label a {
+    font-size: 12px;
+  }
+}
+
 section .page_contactus .contactus_content .contactus_form .contactus_form_item label span {
   color: #a6936a;
 }
@@ -852,6 +895,12 @@ section .page_contactus .contactus_content .contactus_form .contactus_form_item 
   font-size: 18px;
 }
 
+@media (max-width: 600px) {
+  section .page_contactus .contactus_content .contactus_form .contactus_form_item select {
+    font-size: 14px;
+  }
+}
+
 section .page_contactus .contactus_content .contactus_form .contactus_form_item select:focus {
   outline: 0;
 }
@@ -864,6 +913,13 @@ section .page_contactus .contactus_content .contactus_form .contactus_form_item 
   border-bottom: 1px solid #a6936a;
   color: #a6936a;
   font-size: 18px;
+  border-radius: 0;
+}
+
+@media (max-width: 600px) {
+  section .page_contactus .contactus_content .contactus_form .contactus_form_item input[type="text"] {
+    font-size: 14px;
+  }
 }
 
 section .page_contactus .contactus_content .contactus_form .contactus_form_item input[type="text"]:focus {
@@ -949,9 +1005,21 @@ section .page_contactus .contactus_content .contactus_form button {
   }
 }
 
+@media (max-width: 600px) {
+  section .page_contactus .contactus_content .contactus_form button {
+    font-size: 18px;
+  }
+}
+
 section .page_contactus .contactus_content .contactus_form button:after {
   right: 12px;
   top: 16px;
+}
+
+@media (max-width: 600px) {
+  section .page_contactus .contactus_content .contactus_form button:after {
+    top: 20px;
+  }
 }
 
 section .page_contactus .contactus_content .contactus_form button:hover {

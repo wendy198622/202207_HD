@@ -10,7 +10,10 @@ section{
         font-weight: 600;
         letter-spacing: 6px;
         @media (max-width:960px){
-            font-size: 7.2vw;       
+            font-size: 36px;          
+        }
+        @media (max-width:600px){
+            font-size: 28px;          
         }
     }
     h3{
@@ -20,7 +23,10 @@ section{
         letter-spacing: 1px;
         color: #a6936a;
         @media (max-width:960px){
-            font-size: 2.6vw;            
+            font-size: 18px;             
+        }
+        @media (max-width:600px){
+            font-size: 14px;          
         }
     }
 
@@ -35,6 +41,9 @@ section{
             line-height: 1.8;
             position: relative;
             transition: all .3s;
+            @media (max-width:600px){
+                font-size: 16px;          
+            }
         }
         &:after{
             content: "";
@@ -48,6 +57,10 @@ section{
             right: 10px;
             top: 13px;
             transition: all .3s;
+            @media (max-width:600px){
+                border-width: 5px 0 5px 10px;
+                top: 12px;
+            }
         }
         &:hover{
             background-color: #a6936a;
@@ -78,6 +91,9 @@ section{
                 font-size: 18px;  
                 text-align: center;
                 margin: 30px 0;
+                @media (max-width:600px){
+                    font-size: 14px;   
+                }
                 span{ 
                     color: #a6936a;
                 }       
@@ -102,6 +118,9 @@ section{
                         width: 100% ;
                         margin: 0 10px 50px;
                     }
+                    @media (max-width:600px){
+                        font-size: 18px;   
+                    }
 
                     &.fullwidth{
                         width: calc( 100% - 80px) ;
@@ -118,6 +137,9 @@ section{
                             display: inline;
                             text-decoration: underline;
                             font-size: 16px;
+                            @media (max-width:600px){
+                                font-size: 12px;   
+                            }
                         }
                         span{
                             color: #a6936a;
@@ -132,6 +154,9 @@ section{
                         border-bottom: 1px solid #a6936a;
                         color: #a6936a;
                         font-size: 18px;
+                        @media (max-width:600px){
+                            font-size: 14px;   
+                        }
                         &:focus{
                             outline: 0;
                         }
@@ -144,6 +169,10 @@ section{
                         border-bottom: 1px solid #a6936a;
                         color: #a6936a;
                         font-size: 18px;
+                        border-radius: 0;
+                        @media (max-width:600px){
+                            font-size: 14px;   
+                        }
                         &:focus{
                             outline: 0;
                         }
@@ -217,9 +246,15 @@ section{
                         margin: 0 auto;   
                         display: block;      
                     }
+                    @media (max-width:600px){
+                        font-size: 18px;   
+                    }
                     &:after{
                         right: 12px;
                         top: 16px;
+                        @media (max-width:600px){
+                            top: 20px;
+                        }
                     }
                     &:hover{ 
                         cursor: pointer;
