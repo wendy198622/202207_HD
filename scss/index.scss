@@ -80,6 +80,14 @@ section{
             position: relative;
             left: 0;
             overflow: hidden;
+            img{
+                &.pc{ display: block;}
+                &.mob{ display: none;}
+                @media (max-width:800px){
+                    &.pc{ display: none;}
+                    &.mob{ display: block;}
+                }
+            }
             &:after{
                 content: "";
                 width: 100%;
@@ -91,6 +99,11 @@ section{
                 position: absolute;
                 top: 0;
                 left: 0;
+                @media (max-width:800px){
+                    padding-bottom: 186%;
+                    background: url(../img/event_bg_mob.png) center top no-repeat;
+                    background-size: cover;
+                }
             }
 
             .slick-prev{
@@ -100,13 +113,14 @@ section{
                 right: 165px;
                 z-index: 5;
                 @media (max-width:960px){
-                    bottom: -2px;
+                    bottom: 2px;
                     right: 125px;
                 }
                 @media (max-width:600px){
                     right: 100px;
                 }
                 &:before{
+                    content: "";
                     width: 0;
                     height: 0;
                     display: inline-block;
@@ -127,13 +141,14 @@ section{
                 right: 65px;
                 z-index: 5;
                 @media (max-width:960px){
-                    bottom: -2px;
+                    bottom: 2px;
                     right: 25px;
                 }
                 @media (max-width:600px){
                     right: 20px;
                 }
                 &:before{
+                    content: "";
                     width: 0;
                     height: 0;
                     display: inline-block;
@@ -185,6 +200,7 @@ section{
         background-size: cover; 
         @media (max-width:960px){
             padding-top: 10%;
+            padding-left: 2%;
         }
         .home_works_title{
             width: 260px;
@@ -262,6 +278,9 @@ section{
             }
             .home_works_photo{
                 width: 113%;
+                @media (max-width:960px){
+                    width: 180%;
+                }
                 .home_works_photo_box{
                     .home_works_photo_item{
                         padding: 0 20px 40px;
@@ -369,7 +388,7 @@ section{
                     right: auto;
                     z-index: 5;
                     @media (max-width:960px){
-                        left: -22%;
+                        left: -13%;
                         width: 42px;
                         height: 42px;
                         bottom: 58px;
@@ -413,7 +432,7 @@ section{
                     right: auto;
                     z-index: 5;
                     @media (max-width:960px){
-                        left: -22%;
+                        left: -13%;
                         width: 42px;
                         height: 42px;
                     }
@@ -457,25 +476,38 @@ section{
         background: url(../img/news_bg.jpg) center top no-repeat;
         background-size: cover; 
         @media (max-width:960px){
-            padding: 10% 10% 60px;
+            padding: 10% 2% 60px;
         }
         .home_news_title{
             float: left;
             border-left: 1px solid #a6936a;
             padding: 40px 60px;
+            overflow: hidden;
             @media (max-width:960px){
                 float: unset;
-                padding: 40px 40px;
-                border-right: 1px solid #a6936a;
+                padding: 40px 0;
+                border-left: 0;
             }
             h2{ 
                 margin-top: 10px;
+                @media (max-width:960px){
+                    width: calc(100% - 200px);
+                    float: left;
+                }
+            }
+            h3{
+                @media (max-width:960px){
+                    width: calc(100% - 200px);
+                    float: left;
+                }
             }
             .home_news_more{
                 border: 1px solid #a6936a;
                 margin-top: 100px;
                 @media (max-width:960px){
-                    margin-top: 20px;
+                    width: 200px;
+                    float: right;
+                    margin-top: 0;
                 }
             }
         }
@@ -483,8 +515,10 @@ section{
             padding-right: 40px;
             border-right: 1px solid #a6936a;
             @media (max-width:960px){
-                border-left: 1px solid #a6936a;
-                padding-left: 40px;
+                border-right: 0;
+                padding-right: 0;
+                border-top: 1px solid #a6936a;
+                border-bottom: 1px solid #a6936a;;
             }
             .home_news_item{
                 padding: 10px 0;
@@ -493,6 +527,7 @@ section{
                     text-align: justify;
                     overflow: hidden;
                     border-bottom: 1px dashed #a6936a;
+                    &:last-child{ border-bottom: 0;}
                     a{ 
                         color: #a6936a;
                         opacity: 1;
@@ -506,6 +541,7 @@ section{
                         width: 140px;
                         font-size: 22px;
                         line-height: 1;
+                        color: #a6936a;
                         @media (max-width:600px){
                             width: 100%;
                             font-size: 18px;   
@@ -541,6 +577,9 @@ section{
         overflow: hidden;
         background: url(../img/contactus_bg.jpg) center top no-repeat;
         background-size: cover; 
+        @media (max-width:960px){
+            padding: 25px 2%;
+        }
         .home_contactus_title{
             h2{ 
                 margin-top: 10px;
@@ -693,7 +732,7 @@ section{
                     text-align: left;
                     padding: 0 12px;
                     position: absolute;
-                    right: 0;
+                    right: 80px;
                     bottom: 80px;
                     border: 1px solid #a6936a;
                     background: #fff;
@@ -708,14 +747,23 @@ section{
                         margin: 0 auto;   
                         display: block;      
                     }
+                    @media (max-width:800px){
+                        width: 100%;
+                        text-align: center;
+                    }
                     @media (max-width:600px){
                         font-size: 18px;   
                     }
                     &:after{
                         right: 12px;
                         top: 16px;
+                        @media (max-width:800px){
+                            top: 20px;
+                            right: calc( 50% - 80px);
+                        }
                         @media (max-width:600px){
                             top: 20px;
+                            right: calc( 50% - 60px);
                         }
                     }
                     &:hover{ 

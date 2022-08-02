@@ -231,7 +231,7 @@ section{
                     text-align: left;
                     padding: 0 12px;
                     position: absolute;
-                    right: 0;
+                    right: 80px;
                     bottom: 80px;
                     border: 1px solid #a6936a;
                     background: #fff;
@@ -246,14 +246,23 @@ section{
                         margin: 0 auto;   
                         display: block;      
                     }
+                    @media (max-width:800px){
+                        width: 100%;
+                        text-align: center;
+                    }
                     @media (max-width:600px){
                         font-size: 18px;   
                     }
                     &:after{
                         right: 12px;
                         top: 16px;
+                        @media (max-width:800px){
+                            top: 20px;
+                            right: calc( 50% - 80px);
+                        }
                         @media (max-width:600px){
                             top: 20px;
+                            right: calc( 50% - 60px);
                         }
                     }
                     &:hover{ 

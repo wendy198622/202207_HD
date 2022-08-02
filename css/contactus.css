@@ -42,6 +42,23 @@ img {
   display: block;
 }
 
+.pc {
+  display: block;
+}
+
+.mob {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .pc {
+    display: none;
+  }
+  .mob {
+    display: block;
+  }
+}
+
 .btn {
   position: relative;
   background: transparent;
@@ -420,7 +437,7 @@ input, button, textarea, select {
     top: 0;
     right: 0;
     float: unset;
-    background: #ccc;
+    background: #fff;
     padding-top: 20%;
   }
 }
@@ -1046,7 +1063,7 @@ section .page_contactus .contactus_content .contactus_form button {
   text-align: left;
   padding: 0 12px;
   position: absolute;
-  right: 0;
+  right: 80px;
   bottom: 80px;
   border: 1px solid #a6936a;
   background: #fff;
@@ -1067,6 +1084,13 @@ section .page_contactus .contactus_content .contactus_form button {
   }
 }
 
+@media (max-width: 800px) {
+  section .page_contactus .contactus_content .contactus_form button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 @media (max-width: 600px) {
   section .page_contactus .contactus_content .contactus_form button {
     font-size: 18px;
@@ -1078,9 +1102,17 @@ section .page_contactus .contactus_content .contactus_form button:after {
   top: 16px;
 }
 
+@media (max-width: 800px) {
+  section .page_contactus .contactus_content .contactus_form button:after {
+    top: 20px;
+    right: calc( 50% - 80px);
+  }
+}
+
 @media (max-width: 600px) {
   section .page_contactus .contactus_content .contactus_form button:after {
     top: 20px;
+    right: calc( 50% - 60px);
   }
 }
 

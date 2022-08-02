@@ -30,6 +30,13 @@ img{ width: 100%; display: block;}
     display: block;
   }
 }
+.pc{ display: block;}
+.mob{ display: none;}
+@media (max-width:800px){
+  .pc{ display: none;}
+  .mob{ display: block;}
+}
+
 .btn{
   position: relative;
   background: transparent;

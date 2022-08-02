@@ -42,6 +42,23 @@ img {
   display: block;
 }
 
+.pc {
+  display: block;
+}
+
+.mob {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .pc {
+    display: none;
+  }
+  .mob {
+    display: block;
+  }
+}
+
 .btn {
   position: relative;
   background: transparent;
@@ -420,7 +437,7 @@ input, button, textarea, select {
     top: 0;
     right: 0;
     float: unset;
-    background: #ccc;
+    background: #fff;
     padding-top: 20%;
   }
 }
@@ -854,6 +871,23 @@ section .home_event .home_event_banner {
   overflow: hidden;
 }
 
+section .home_event .home_event_banner img.pc {
+  display: block;
+}
+
+section .home_event .home_event_banner img.mob {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  section .home_event .home_event_banner img.pc {
+    display: none;
+  }
+  section .home_event .home_event_banner img.mob {
+    display: block;
+  }
+}
+
 section .home_event .home_event_banner:after {
   content: "";
   width: 100%;
@@ -867,6 +901,14 @@ section .home_event .home_event_banner:after {
   left: 0;
 }
 
+@media (max-width: 800px) {
+  section .home_event .home_event_banner:after {
+    padding-bottom: 186%;
+    background: url(../img/event_bg_mob.png) center top no-repeat;
+    background-size: cover;
+  }
+}
+
 section .home_event .home_event_banner .slick-prev {
   top: auto;
   left: auto;
@@ -877,7 +919,7 @@ section .home_event .home_event_banner .slick-prev {
 
 @media (max-width: 960px) {
   section .home_event .home_event_banner .slick-prev {
-    bottom: -2px;
+    bottom: 2px;
     right: 125px;
   }
 }
@@ -889,6 +931,7 @@ section .home_event .home_event_banner .slick-prev {
 }
 
 section .home_event .home_event_banner .slick-prev:before {
+  content: "";
   width: 0;
   height: 0;
   display: inline-block;
@@ -914,7 +957,7 @@ section .home_event .home_event_banner .slick-next {
 
 @media (max-width: 960px) {
   section .home_event .home_event_banner .slick-next {
-    bottom: -2px;
+    bottom: 2px;
     right: 25px;
   }
 }
@@ -926,6 +969,7 @@ section .home_event .home_event_banner .slick-next {
 }
 
 section .home_event .home_event_banner .slick-next:before {
+  content: "";
   width: 0;
   height: 0;
   display: inline-block;
@@ -984,6 +1028,7 @@ section .home_works {
 @media (max-width: 960px) {
   section .home_works {
     padding-top: 10%;
+    padding-left: 2%;
   }
 }
 
@@ -1095,6 +1140,12 @@ section .home_works .home_works_content .home_works_more:hover:after {
 
 section .home_works .home_works_content .home_works_photo {
   width: 113%;
+}
+
+@media (max-width: 960px) {
+  section .home_works .home_works_content .home_works_photo {
+    width: 180%;
+  }
 }
 
 section .home_works .home_works_content .home_works_photo .home_works_photo_box .home_works_photo_item {
@@ -1254,7 +1305,7 @@ section .home_works .home_works_content .home_works_photo .slick-prev {
 
 @media (max-width: 960px) {
   section .home_works .home_works_content .home_works_photo .slick-prev {
-    left: -22%;
+    left: -13%;
     width: 42px;
     height: 42px;
     bottom: 58px;
@@ -1308,7 +1359,7 @@ section .home_works .home_works_content .home_works_photo .slick-next {
 
 @media (max-width: 960px) {
   section .home_works .home_works_content .home_works_photo .slick-next {
-    left: -22%;
+    left: -13%;
     width: 42px;
     height: 42px;
   }
@@ -1356,7 +1407,7 @@ section .home_news {
 
 @media (max-width: 960px) {
   section .home_news {
-    padding: 10% 10% 60px;
+    padding: 10% 2% 60px;
   }
 }
 
@@ -1364,18 +1415,33 @@ section .home_news .home_news_title {
   float: left;
   border-left: 1px solid #a6936a;
   padding: 40px 60px;
+  overflow: hidden;
 }
 
 @media (max-width: 960px) {
   section .home_news .home_news_title {
     float: unset;
-    padding: 40px 40px;
-    border-right: 1px solid #a6936a;
+    padding: 40px 0;
+    border-left: 0;
   }
 }
 
 section .home_news .home_news_title h2 {
   margin-top: 10px;
+}
+
+@media (max-width: 960px) {
+  section .home_news .home_news_title h2 {
+    width: calc(100% - 200px);
+    float: left;
+  }
+}
+
+@media (max-width: 960px) {
+  section .home_news .home_news_title h3 {
+    width: calc(100% - 200px);
+    float: left;
+  }
 }
 
 section .home_news .home_news_title .home_news_more {
@@ -1385,7 +1451,9 @@ section .home_news .home_news_title .home_news_more {
 
 @media (max-width: 960px) {
   section .home_news .home_news_title .home_news_more {
-    margin-top: 20px;
+    width: 200px;
+    float: right;
+    margin-top: 0;
   }
 }
 
@@ -1396,8 +1464,10 @@ section .home_news .home_news_content {
 
 @media (max-width: 960px) {
   section .home_news .home_news_content {
-    border-left: 1px solid #a6936a;
-    padding-left: 40px;
+    border-right: 0;
+    padding-right: 0;
+    border-top: 1px solid #a6936a;
+    border-bottom: 1px solid #a6936a;
   }
 }
 
@@ -1410,6 +1480,10 @@ section .home_news .home_news_content .home_news_item li {
   text-align: justify;
   overflow: hidden;
   border-bottom: 1px dashed #a6936a;
+}
+
+section .home_news .home_news_content .home_news_item li:last-child {
+  border-bottom: 0;
 }
 
 section .home_news .home_news_content .home_news_item li a {
@@ -1428,6 +1502,7 @@ section .home_news .home_news_content .home_news_item li .news_date {
   width: 140px;
   font-size: 22px;
   line-height: 1;
+  color: #a6936a;
 }
 
 @media (max-width: 600px) {
@@ -1465,6 +1540,12 @@ section .home_contactus {
   overflow: hidden;
   background: url(../img/contactus_bg.jpg) center top no-repeat;
   background-size: cover;
+}
+
+@media (max-width: 960px) {
+  section .home_contactus {
+    padding: 25px 2%;
+  }
 }
 
 section .home_contactus .home_contactus_title h2 {
@@ -1658,7 +1739,7 @@ section .home_contactus .home_contactus_content .home_contactus_form button {
   text-align: left;
   padding: 0 12px;
   position: absolute;
-  right: 0;
+  right: 80px;
   bottom: 80px;
   border: 1px solid #a6936a;
   background: #fff;
@@ -1679,6 +1760,13 @@ section .home_contactus .home_contactus_content .home_contactus_form button {
   }
 }
 
+@media (max-width: 800px) {
+  section .home_contactus .home_contactus_content .home_contactus_form button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 @media (max-width: 600px) {
   section .home_contactus .home_contactus_content .home_contactus_form button {
     font-size: 18px;
@@ -1690,9 +1778,17 @@ section .home_contactus .home_contactus_content .home_contactus_form button:afte
   top: 16px;
 }
 
+@media (max-width: 800px) {
+  section .home_contactus .home_contactus_content .home_contactus_form button:after {
+    top: 20px;
+    right: calc( 50% - 80px);
+  }
+}
+
 @media (max-width: 600px) {
   section .home_contactus .home_contactus_content .home_contactus_form button:after {
     top: 20px;
+    right: calc( 50% - 60px);
   }
 }
 

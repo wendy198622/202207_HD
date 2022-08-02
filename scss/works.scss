@@ -125,6 +125,11 @@ section{
                 width: 88%;
                 margin: 0 auto;
                 overflow: hidden;
+                @media (max-width:800px){
+                    width: calc(100% - 130px);
+                    margin-left: 140px;
+                    box-sizing: border-box;
+                }
                 .works_photo_item{
                     width: calc( 100% / 3);
                     padding: 0 20px 60px;
@@ -133,8 +138,17 @@ section{
                         width: calc( 100% / 2);
                         padding: 0 10px 40px;
                     }
+                    @media (max-width:800px){
+                        width: 100%;
+                    }
                     a{ overflow: hidden;}
                     .photo{
+                        @media (max-width:800px){
+                            width: 100%;
+                            height: 0;
+                            padding-bottom: 60%;
+                            overflow: hidden;
+                        }
                         &:after{
                             background-color: #000;
                             content: "";
@@ -148,6 +162,9 @@ section{
                             transition: transform .5s cubic-bezier(.19,1,.22,1);
                             width: 100%;
                             z-index: 10;
+                        }
+                        img{
+                            transform: translateY(-25%);
                         }
                     }
                     .works_photo_item_caption{
@@ -192,9 +209,16 @@ section{
                         transition: all .3s;
                         @media (max-width:960px){
                             width: 100%;
-                            margin-top: 36px;
                             font-size: 24px;
                             margin-top: 20px;         
+                        }
+                        @media (max-width:800px){
+                            width: 100px;
+                            text-align: right;
+                            margin-right: 20px;
+                            margin-top: 40px;
+                            font-size: 32px;
+
                         }
                         @media (max-width:600px){
                             font-size: 16px;
@@ -285,6 +309,10 @@ section{
                 width: 92%;
                 padding: 0 4%;
                 margin: 0 auto;
+                @media (max-width:800px){
+                    width: 98%;
+                    padding: 0 1%;
+                }
                 .works_page_photo_kv{    
                     padding-bottom: 20px;
                     .works_page_photo_box{
@@ -345,8 +373,8 @@ section{
                         li{
                             box-sizing: border-box;
                             float: left;
-                            &:last-child{ margin-right: 0;}
                             position: relative;
+                            &:last-child{ margin-right: 0;}
                             span{
                                 position: absolute;
                                 bottom: 10px;
@@ -363,6 +391,10 @@ section{
                     .works_page_introduce_box{
                         width: 48%;
                         float: left;
+                        @media (max-width:960px){
+                            width: 100%;
+                            float: unset;
+                        }
                         .works_page_title{
                             h4{
                                 padding-left: 40px;
@@ -406,6 +438,10 @@ section{
                         background-color: #d2c9b4;
                         padding: 80px 50px;
                         margin-top: 60px;
+                        @media (max-width:960px){
+                            width: 100%;
+                            float: unset;
+                        }
                         h2{
                             text-align: center;
                             font-size: 28px;
@@ -420,6 +456,7 @@ section{
                         .works_page_contactus_form{
                             position: relative;
                             margin-top: 60px;
+                            overflow: hidden;
                             .works_page_contactus_form_item{
                                 width: 100%;
                                 color: #a6936a;
@@ -430,6 +467,9 @@ section{
                                     width: 420px;
                                     float: left;
                                     margin-top: 40px;
+                                    @media (max-width:960px){
+                                        width: 360px;
+                                    }
                                 }
             
                                 label{
@@ -530,16 +570,31 @@ section{
                                 text-align: left;
                                 padding: 0 12px;
                                 border: 1px solid #000;
-                                background: #fff;
+                                background: transparent;
                                 font-weight: 600;
                                 color: #000;
                                 transition: all .3s;
                                 float: right;
                                 margin-top: 40px;
+                                @media (max-width:800px){
+                                    width: 100%;
+                                    text-align: center;
+                                }
+                                @media (max-width:600px){
+                                    font-size: 18px;   
+                                }
                                 &:after{
                                     right: 12px;
                                     top: 16px;
-                                    border-color: transparent transparent transparent #000;                                    
+                                    border-color: transparent transparent transparent #000;  
+                                    @media (max-width:800px){
+                                        top: 15px;
+                                        right: calc( 50% - 80px);
+                                    }
+                                    @media (max-width:600px){
+                                        top: 15px;
+                                        right: calc( 50% - 60px);
+                                    }                                  
                                 }
                                 &:hover{ 
                                     cursor: pointer;
@@ -547,8 +602,6 @@ section{
                                     color: #fff;
                                     background-color: #000;
                                     &:after{
-                                        right: 12px;
-                                        top: 16px;
                                         border-color: transparent transparent transparent #fff;                                    
                                     }
                                 }
@@ -690,9 +743,9 @@ section{
                     width: 40%;
                     margin-left: 50%;
                     margin-top: -60px;
-                    @media (max-width:960px){
-                        margin-top: 0;
-                        padding: 5% 0;
+                    @media (max-width:800px){
+                        width: 90%;
+                        margin: 0 auto;
                     }
                     .works_classic_item_list{
                         width: 100%;
@@ -707,12 +760,9 @@ section{
                             border-radius: 10px;
                             position: absolute;
                             left: -5px;
-                            top: 50%;
-                            @media (max-width:960px){
-                                top: 0%;
-                            }
-                            @media (max-width:600px){
-                                left: -6px;
+                            top: 58%;
+                            @media (max-width:800px){
+                                display: none;
                             }
                         }
                         .works_classic_year{
@@ -726,16 +776,20 @@ section{
                             left: -260px;
                             top: 50%;
                             // transform: translateY(-50%);
-                            margin-top: -50%;
+                            // margin-top: -50%;
                             letter-spacing: 2px;
                             font-weight: 300;
-                            @media (max-width:960px){
+                            @media (max-width:800px){
                                 width: 100%;
-                                top: 0%;
-                                left: -110%;
+                                left: 0;
+                                top: unset;
+                                bottom: 20px;
+                                z-index: 10;
+                                text-align: left;
+                                font-size: 60px;
                             }
                             @media (max-width:600px){
-                                font-size: 18px;
+                                font-size: 42px;
                             }
                         }
                         .works_classic_name{
@@ -747,24 +801,27 @@ section{
                             left: 20px;
                             top: 50%;
                             // transform: translateY(-50%);
-                            margin-top: -50%;
+                            // margin-top: -50%;
                             padding: 0 20px;
                             letter-spacing: 2px;
-                            @media (max-width:960px){
-                                position: relative;
-                                width: 100%;
-                                top: 10%;
+                            @media (max-width:800px){
+                                left: unset;
+                                top: unset;
+                                right: 0;
+                                bottom: 30px;
+                                text-align: right;
+                                padding: 0;
                             }
                             @media (max-width:600px){
-                                font-size: 18px;
+                                font-size: 22px;
                             }
                         }
                         .works_classic_photo{
                             width: calc( 100% - 260px );
                             float: right;
-                            @media (max-width:960px){
-                                width: 90%;
-                                margin: -5% auto 0;
+                            @media (max-width:800px){
+                                width: 100%;
+                                margin: 0 auto 100px;
                             }
                         }
                     }
@@ -773,9 +830,9 @@ section{
                     width: 40%;
                     margin-left: 10%;
                     margin-top: -60px;
-                    @media (max-width:960px){
-                        margin-top: 0;
-                        padding: 5% 0;
+                    @media (max-width:800px){
+                        width: 90%;
+                        margin: 0 auto;
                     }
                     .works_classic_item_list{
                         width: 100%;
@@ -790,12 +847,9 @@ section{
                             border-radius: 10px;
                             position: absolute;
                             right: -5px;
-                            top: 50%;
-                            @media (max-width:960px){
-                                top: 0%;
-                            }
-                            @media (max-width:600px){
-                                right: -4px;
+                            top: 58%;
+                            @media (max-width:800px){
+                                display: none;
                             }
                         }
                         .works_classic_year{
@@ -809,14 +863,20 @@ section{
                             right: -260px;
                             top: 50%;
                             // transform: translateY(-50%);
-                            margin-top: -50%;
+                            // margin-top: -50%;
                             letter-spacing: 2px;
                             font-weight: 300;
-                            @media (max-width:960px){
+                            @media (max-width:800px){
                                 width: 100%;
-                                top: 0%;
-                                left: 110%;
-                                font-size: 4vw;
+                                left: 0;
+                                top: unset;
+                                bottom: 20px;
+                                z-index: 10;
+                                text-align: left;
+                                font-size: 60px;
+                            }
+                            @media (max-width:600px){
+                                font-size: 42px;
                             }
                         }
                         .works_classic_name{
@@ -828,22 +888,27 @@ section{
                             right: 20px;
                             top: 50%;
                             // transform: translateY(-50%);
-                            margin-top: -50%;
+                            // margin-top: -50%;
                             padding: 0 20px;
                             letter-spacing: 2px;
-                            @media (max-width:960px){
-                                position: relative;
-                                width: 100%;
-                                top: 10%;
-                                font-size: 4vw;
+                            @media (max-width:800px){
+                                left: unset;
+                                top: unset;
+                                right: 0;
+                                bottom: 30px;
+                                text-align: right;
+                                padding: 0;
+                            }
+                            @media (max-width:600px){
+                                font-size: 22px;
                             }
                         }
                         .works_classic_photo{
                             width: calc( 100% - 260px );
                             float: left;
-                            @media (max-width:960px){
-                                width: 90%;
-                                margin: -5% auto 0;
+                            @media (max-width:800px){
+                                width: 100%;
+                                margin: 0 auto 100px;
                             }
                         }
                     }

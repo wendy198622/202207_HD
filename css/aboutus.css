@@ -42,6 +42,23 @@ img {
   display: block;
 }
 
+.pc {
+  display: block;
+}
+
+.mob {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .pc {
+    display: none;
+  }
+  .mob {
+    display: block;
+  }
+}
+
 .btn {
   position: relative;
   background: transparent;
@@ -420,7 +437,7 @@ input, button, textarea, select {
     top: 0;
     right: 0;
     float: unset;
-    background: #ccc;
+    background: #fff;
     padding-top: 20%;
   }
 }
