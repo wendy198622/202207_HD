@@ -459,7 +459,7 @@
                         console.log("1")
                         selectors.item.removeClass(selectors.activeClass);
                         selectors.item.last().addClass(selectors.activeClass);
-                    } else if (pos <= max - 50  && pos >= min) {
+                    } else if (pos <= max  && pos >= min) {
                         //selectors.item.removeClass(selectors.activeClass);
                         if(!$(this).hasClass(selectors.activeClass)){
                             console.log("===> a" + i)
@@ -467,7 +467,8 @@
                             $(this).addClass(selectors.activeClass);
                         }
                     } else {
-                        //console.log("===> d" + i)
+                        console.log("===> d" + i)
+                        console.log("max:" + max + " min:" + min)
                         $(this).removeClass(selectors.activeClass);
                     }
                 });
