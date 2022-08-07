@@ -2,6 +2,10 @@
 @import '_header';
 @import '_footer';
 
+
+body{
+    background: #f5f4f2;
+}
 section{
 
     h2{ 
@@ -67,12 +71,20 @@ section{
     .page_news{
         padding: 200px 0 60px;
         overflow: hidden;
-        background: url(../img/page_news_bg_top.jpg ) center top no-repeat,
-                    url(../img/page_news_bg_bottom.jpg) center bottom no-repeat #f6f4f2;
-        background-size: contain; 
         position: relative;
         @media (max-width:960px){
             padding-top: 20%;
+        }
+        .bg{
+            width: 100%;
+            height: 100%;
+            background: url(../img/page_news_bg_top.jpg ) center top no-repeat,
+                        url(../img/page_news_bg_bottom.jpg) center bottom no-repeat #f6f4f2;
+            background-size: contain; 
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
         }
         .news_title{
             width: 100%;
@@ -97,7 +109,7 @@ section{
             }
             
             .news_item{
-                width: calc( 100% - 160px);
+                width: 100%;
                 margin: 0 auto;
                 padding: 96px 160px 200px;
                 background: #fff;
@@ -151,7 +163,7 @@ section{
             }
 
             .news_page_inner{
-                width: calc( 100% - 120px);
+                width: 100%;
                 margin: 0 auto;
                 padding: 96px 60px 200px;
                 background: #fff;

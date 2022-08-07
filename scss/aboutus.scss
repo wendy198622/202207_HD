@@ -66,9 +66,9 @@ section{
 
     .page_aboutus{
         padding: 200px 0 60px;
-        overflow: hidden;
-        background: url(../img/page_aboutus_bg.jpg) center top no-repeat;
+        background: url(../img/page_aboutus_bg_top.png) center top no-repeat;
         background-size: cover; 
+        overflow: hidden;
         position: relative;
         @media (max-width:1920px){
             background-size: 1920px auto; 
@@ -80,6 +80,28 @@ section{
         @media (max-width:600px){
             background-size: 1200px auto; 
             padding-top: 20%;
+        }
+        .bg{
+            width: 100%;
+            height: 100%;
+            background: url(../img/page_aboutus_bg_bottom.png) center 480px no-repeat;
+            background-size: 100% auto; 
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 0;
+            @media (max-width:800px){
+                background: url(../img/page_aboutus_bg_bottom_mob.png) center 380px no-repeat;
+            }
+            &:after{
+                content: "";
+                width: 100%;
+                height: 300px;
+                position: absolute;
+                bottom: 0;
+                background-image: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,.5) 20%);
+    
+            }
         }
 
         .aboutus_title{
@@ -103,6 +125,8 @@ section{
             width: 85%;
             margin: 0 auto;
             margin-top: 450px;
+            position: relative;
+            z-index: 5;
             @media (max-width:960px){
                 margin-top: 360px;
             }
@@ -113,16 +137,18 @@ section{
                 font-size: 18px;
                 line-height: 2.2;
                 text-align: center;
+                margin-top: 60px;
             }
             .video{
                 width: 100%;
                 height: 720px;
-                margin: 60px 0;
+                margin: 120px 0;
                 @media (max-width:960px){
                     height: 460px;
                 }
                 @media (max-width:800px){
                     height: 380px;
+                    margin: 40px 0;
                 }
                 @media (max-width:600px){
                     height: 280px;

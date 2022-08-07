@@ -18,12 +18,14 @@
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/contactus.css" />
+    <link rel="stylesheet" type="text/css" href="css/hongkong.css" />
 	<!-- js -->
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	<!-- <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script> -->
 	<script type="text/javascript" src="js/imgLiquid-min.js"></script>
 	<script type="text/javascript" src="js/slick.js"></script>
 	<script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/hongkong.js"></script>
 
 </head>
 
@@ -52,6 +54,7 @@
 	
 	<section>
 		<div class="page_contactus">
+			<div class="bg" data-parallax data-parallax-top data-parallax-factor="1"></div>
 			<div class="contactus_title">
 				<h3 class="wow fadeInUp">CONTACT US</h3>
 				<h2 class="wow fadeInDown">聯絡我們</h2>
@@ -123,28 +126,33 @@
         </div>
     </section>
 
-	<footer>
-		<div class="footer_logo">
-			<a href="/">
-				<img src="img/HD_logo_icon.svg" alt="">
-				<p>華登建設股份有限公司</p>
-			</a>
-		</div>
-		<ul class="footer_menu">
-			<li><a href="aboutus.html">關於華登</a></li>
-			<li><a href="works.html">個案作品</a></li>
-			<li><a href="news.html">最新消息</a></li>
-			<li><a href="contactus.html">聯絡我們</a></li>
-		</ul>
-		<p class="copyright">華登建設股份有限公司版權所有©Cathay Real Estate All Right Reserved.</p>
-		<div class="gotop">
-			SCROLL TOP
-		</div>
-	</footer>
+    <footer>
+        <div class="footer_logo">
+            <a href="/">
+                <img src="img/HD_logo_icon.svg" alt="">
+                <p>華登建設股份有限公司</p>
+            </a>
+        </div>
+        <ul class="footer_menu">
+            <li><a href="aboutus.html">關於華登</a></li>
+            <li><a href="works.html">個案作品</a></li>
+            <li><a href="news.html">最新消息</a></li>
+            <li><a href="contactus.html">聯絡我們</a></li>
+        </ul>
+        <div class="copyright">華登建設股份有限公司版權所有©Cathay Real Estate All Right Reserved.
+            <div class="gotop">
+                SCROLL TOP
+            </div>
+        </div>
+    </footer>
 </body>
 
 <script>
 	$(document).ready(function () {
+        $.hongkong({
+            mobile: true
+		});
+		
         var menu_close = true
         new WOW().init()
 
@@ -193,6 +201,16 @@
         $('.popup_close').on('click', function () {
             $('.form_popup').removeClass('is_acted');
         });
+    
+		$(window).scroll(function() {    
+			var scroll = $(window).scrollTop();    
+			if (scroll >= 1000) {
+				$("header").addClass("close");
+			}else{
+				$("header").removeClass("close");
+			}
+		})
+
         
 	});
 

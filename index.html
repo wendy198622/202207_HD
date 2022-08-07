@@ -17,12 +17,16 @@
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <!-- js -->
-    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/hongkong.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"/>
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <!-- <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script> -->
     <script type="text/javascript" src="js/imgLiquid-min.js"></script>
     <script type="text/javascript" src="js/slick.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/hongkong.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -51,28 +55,33 @@
 
     <section>
         <div class="home_event">
-            <div class="home_event_banner slide wow fadeIn">
-                <div class="home_event_banner_item">
-                    <img class="pc" src="img/event_01.jpg">
-                    <img class="mob" src="img/event_01_mob.jpg">
+            <div class="home_event_banner swiper mySwiper">
+                <div class="top"></div>
+                <div class="swiper-wrapper">
+                    <div class="home_event_banner_item swiper-slide">
+                        <img class="pc" src="img/event_01.jpg">
+                        <img class="mob" src="img/event_01_mob.jpg">
+                    </div>
+                    <div class="home_event_banner_item swiper-slide">
+                        <img class="pc" src="img/event_02.jpg">
+                        <img class="mob" src="img/event_02_mob.jpg">
+                    </div>
+                    <div class="home_event_banner_item swiper-slide">
+                        <img class="pc" src="img/event_03.jpg">
+                        <img class="mob" src="img/event_03_mob.jpg">
+                    </div>
                 </div>
-                <div class="home_event_banner_item">
-                    <img class="pc" src="img/event_02.jpg">
-                    <img class="mob" src="img/event_02_mob.jpg">
-                </div>
-                <div class="home_event_banner_item">
-                    <img class="pc" src="img/event_03.jpg">
-                    <img class="mob" src="img/event_03_mob.jpg">
-                </div>
-            </div>
-            <div class="home_event_nav_number">
-                <span class="current_number">1</span> / <span class="total_number">3</span>
+                <div class="home_event_nav_number swiper-pagination"></div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </section>
 
     <section>
         <div class="home_works">
+            <div class="bg" data-parallax data-parallax-top data-parallax-factor="1"></div>
             <div class="home_works_title">
                 <h2 class="wow fadeInRight">個案作品</h2>
                 <h3 class="wow fadeInRight" data-wow-delay=".5s">WORKS</h3>
@@ -87,7 +96,7 @@
                             <a href="works-page.html">
                                 <div class="photo">
                                     <div class="cover wow bounceIn" data-wow-duration="2s" data-wow-delay=".5s"></div>
-                                    <img src="img/works_01.jpg" class="d-block w-100" alt="...">
+                                    <img src="img/works_01.jpg" alt="...">
                                 </div>
                                 <div class="home_works_photo_item_caption">
                                     <h5>華登經典</h5>
@@ -102,7 +111,7 @@
                             <a href="works-page.html">
                                 <div class="photo">
                                     <div class="cover wow bounceIn" data-wow-duration="2s" data-wow-delay=".5s"></div>
-                                    <img src="img/works_01.jpg" class="d-block w-100" alt="...">
+                                    <img src="img/works_01.jpg" alt="...">
                                 </div>
                                 <div class="home_works_photo_item_caption">
                                     <h5>華登經典 NO.3</h5>
@@ -117,7 +126,7 @@
                             <a href="works-page.html">
                                 <div class="photo">
                                     <div class="cover wow bounceIn" data-wow-duration="2s" data-wow-delay=".5s"></div>
-                                    <img src="img/works_03.jpg" class="d-block w-100" alt="...">
+                                    <img src="img/works_03.jpg" alt="...">
                                 </div>
                                 <div class="home_works_photo_item_caption">
                                     <h5>天帝美墅</h5>
@@ -132,7 +141,7 @@
                             <a href="works-page.html">
                                 <div class="photo">
                                     <div class="cover wow bounceIn" data-wow-duration="2s" data-wow-delay=".5s"></div>
-                                    <img src="img/works_01.jpg" class="d-block w-100" alt="...">
+                                    <img src="img/works_01.jpg" alt="...">
                                 </div>
                                 <div class="home_works_photo_item_caption">
                                     <h5>華登經典</h5>
@@ -147,7 +156,7 @@
                             <a href="works-page.html">
                                 <div class="photo">
                                     <div class="cover wow bounceIn" data-wow-duration="2s" data-wow-delay=".5s"></div>
-                                    <img src="img/works_01.jpg" class="d-block w-100" alt="...">
+                                    <img src="img/works_01.jpg" alt="...">
                                 </div>
                                 <div class="home_works_photo_item_caption">
                                     <h5>華登經典 NO.3</h5>
@@ -162,7 +171,7 @@
                             <a href="works-page.html">
                                 <div class="photo">
                                     <div class="cover wow bounceIn" data-wow-duration="2s" data-wow-delay=".5s"></div>
-                                    <img src="img/works_03.jpg" class="d-block w-100" alt="...">
+                                    <img src="img/works_03.jpg" alt="...">
                                 </div>
                                 <div class="home_works_photo_item_caption">
                                     <h5>天帝美墅</h5>
@@ -176,10 +185,12 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <section>
         <div class="home_news">
+            <div class="bg" data-parallax data-parallax-top data-parallax-factor="1"></div>
             <div class="home_news_title">
                 <h3 class="wow fadeInUp">NEWS</h3>
                 <h2 class="wow fadeInUp" data-wow-delay=".5s">最新消息</h2>
@@ -220,6 +231,7 @@
 
     <section>
         <div class="home_contactus">
+            <div class="bg" data-parallax data-parallax-top data-parallax-factor="1"></div>
             <div class="home_contactus_title">
 				<h3 class="wow fadeInUp">CONTACT US</h3>
 				<h2 class="wow fadeInDown">聯絡我們</h2>
@@ -243,7 +255,7 @@
                         <label for="name">姓名 <span>*</span></label>
                         <input type="text" v-model="name" name="name" placeholder="" required />
                     </div>
-                    <div class="home_contactus_form_item wow fadeInUp" data-wow-delay=".5s">
+                    <div class="home_contactus_form_item select wow fadeInUp" data-wow-delay=".5s">
                         <label for="name">聯絡時段 <span>*</span></label>
                         <select>
 							<option>請選擇時段</option>
@@ -259,11 +271,11 @@
                         <label for="phone">連絡電話 <span>*</span></label>
                         <input type="text" v-model="phone" name="phone" placeholder="" required />
                     </div>
-                    <div class="home_contactus_form_item fullwidth wow fadeInDown" data-wow-delay="1s">
+                    <div class="home_contactus_form_item fullwidth wow fadeInDown" data-wow-delay=".5s">
                         <label for="email">E-mail <span>*</span></label>
                         <input type="text" v-model="email" name="email" placeholder="" required />
                     </div>
-                    <div class="home_contactus_form_item fullwidth wow fadeInDown" data-wow-delay="1.3s">
+                    <div class="home_contactus_form_item fullwidth wow fadeInDown" data-wow-delay=".7s">
                         <label for="message">留言</label>
                         <textarea id="message" v-model="message" name="message" required></textarea>
                     </div>
@@ -271,7 +283,7 @@
                         <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" v-model="check">
                         <label for="checkbox" class="checktxt">我同意通過電話方式與我聯絡 <a href="#">隱私權政策規範</a></label>
                     </div>
-                    <button class="send wow fadeInRight">確認送出</button>
+                    <button class="send wow fadeInRight" data-wow-delay=".5s">確認送出</button>
                 </div>
             </div>
         </div>
@@ -303,15 +315,46 @@
             <li><a href="news.html">最新消息</a></li>
             <li><a href="contactus.html">聯絡我們</a></li>
         </ul>
-        <p class="copyright">華登建設股份有限公司版權所有©Cathay Real Estate All Right Reserved.</p>
-        <div class="gotop">
-            SCROLL TOP
+        <div class="copyright">華登建設股份有限公司版權所有©Cathay Real Estate All Right Reserved.
+            <div class="gotop">
+                SCROLL TOP
+            </div>
         </div>
     </footer>
 </body>
 
 <script>
     $(document).ready(function() {
+        $.hongkong({
+            mobile: true
+        });
+
+        var swiper = new Swiper(".mySwiper", {
+            // grabCursor: true,
+            loop: true,
+            autoplay: true,
+            speed: 1000,
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: ["-20%", 0, -1],
+                },
+                next: {
+                    translate: ["100%", 0, 0],
+                },
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+
         var menu_close = true
         new WOW().init()
 
@@ -334,27 +377,27 @@
             }, 500);
         });
 
-        var $slider = $('.home_event_banner');
+        // var $slider = $('.home_event_banner');
 
-        $slider.on('init', function(event, slick) {
-            let slidesCount = slick.slideCount;
-            //console.log(slidesCount);
-            $(".total_number").text("" + slidesCount);
-        });
+        // $slider.on('init', function(event, slick) {
+        //     let slidesCount = slick.slideCount;
+        //     //console.log(slidesCount);
+        //     $(".total_number").text("" + slidesCount);
+        // });
 
-        $slider.slick({
-            dots: false,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            fade: true,
-            slidesToShow: 1,
-            slidesToScroll: 1
-        });
+        // $slider.slick({
+        //     dots: false,
+        //     autoplay: true,
+        //     autoplaySpeed: 2000,
+        //     fade: true,
+        //     slidesToShow: 1,
+        //     slidesToScroll: 1
+        // });
 
         $('.home_works_photo_box').slick({
             // arrow: true,
             dots: false,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 2000,
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -367,20 +410,31 @@
             }]
         });
 
-        $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-            $(".current_number").text("" + (nextSlide + 1));
+        // $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        //     $(".current_number").text("" + (nextSlide + 1));
+        // });
+          
+        
+        $('.send').on('click', function () {
+            $('.form_popup').addClass('is_acted');
+            setTimeout(() => {
+                $('.form_popup').removeClass('is_acted');
+            }, 10000)
         });
-
-        $('button').on('click', function() {
-            // $('.form_popup').addClass('is_acted');
-            // setTimeout(() => {
-            //     $('.form_popup').removeClass('is_acted');
-            // }, 10000)
-        });
-
-        $('.popup_close').on('click', function() {
+        
+        $('.popup_close').on('click', function () {
             $('.form_popup').removeClass('is_acted');
         });
+    
+        $(window).scroll(function() {    
+            var scroll = $(window).scrollTop();    
+            if (scroll >= 1000) {
+                $("header").addClass("close");
+            }else{
+                $("header").removeClass("close");
+            }
+        })
+
     });
 </script>
 

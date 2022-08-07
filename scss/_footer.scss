@@ -75,52 +75,52 @@ footer{
         border-top: 1px solid #fff;
         font-family: 'Noto Sans TC', sans-serif;
         letter-spacing: 1px;
+        position: relative;
         @media (max-width:960px){
             width: 94%;
             font-size: 2vw;
             line-height: 1.4;
             padding: 5% 0;
             margin-top: 10%;
-
         }
-    }
-    .gotop{
-        width: 180px;
-        font-size: 18px;
-        color: #fff;
-        position: absolute;
-        right: 10%;
-        bottom: 65px;
-        background-color: #a6936a;
-        @media (max-width:960px){
+        .gotop{
+            width: 180px;
+            font-size: 18px;
+            color: #fff;
+            position: absolute;
             right: 0;
-            font-size: 24px;
-            width: 230px;
-            bottom: 84px;
-        }
-        @media (max-width:600px){
-            width: 160px;
-            font-size: 16px;
-            bottom: 64px;
-        }
-        &:after{
-            content: "";
-            width: 0;
-            height: 0;
-            display: inline-block;
-            border-style: solid;
-            border-width: 0 7px 14px 7px;
-            border-color: transparent transparent #fff transparent;
-            opacity: 1;
-            margin-left: 5px;
-            @media (max-width:600px){
-                border-width: 0 5px 10px 5px;
+            top: -26px;
+            padding: 0 20px;
+            background-color: #a6936a;
+            @media (max-width:960px){
+                width: 230px;
+                font-size: 24px;
             }
-        }
-        &:hover{
-            cursor: pointer;
+            @media (max-width:600px){
+                width: 140px;
+                font-size: 13px;
+                top: -10px;
+                padding: 0 10px;
+            }
             &:after{
-                animation: gotop 1s alternate infinite linear;
+                content: "";
+                width: 0;
+                height: 0;
+                display: inline-block;
+                border-style: solid;
+                border-width: 0 7px 14px 7px;
+                border-color: transparent transparent #fff transparent;
+                opacity: 1;
+                margin-left: 5px;
+                @media (max-width:600px){
+                    border-width: 0 5px 10px 5px;
+                }
+            }
+            &:hover{
+                cursor: pointer;
+                &:after{
+                    animation: gotop 1s alternate infinite linear;
+                }
             }
         }
     }
