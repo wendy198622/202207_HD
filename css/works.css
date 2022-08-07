@@ -1690,8 +1690,8 @@ section .page_works_classic .works_classic_content .works_classic_logo img {
 }
 
 section .page_works_classic .works_classic_content .works_classic_item_box .works_classic_item {
-  -webkit-transform: translateY(-80px);
-          transform: translateY(-80px);
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
 }
 
 section .page_works_classic .works_classic_content .works_classic_item_box .works_classic_item.scroll_ani {
