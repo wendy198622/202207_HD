@@ -842,6 +842,11 @@ section{
                         .works_classic_photo{
                             width: calc( 100% - 260px );
                             float: right;
+                            margin-top: 0;
+                            transition: all .3s;
+                            &.scroll_ani{
+                                margin-top: 50px;
+                            }
                             @media (max-width:800px){
                                 width: 100%;
                                 margin: 0 auto 100px;
@@ -932,6 +937,10 @@ section{
                         .works_classic_photo{
                             width: calc( 100% - 260px );
                             float: left;
+                            transition: all .3s;
+                            &.scroll_ani{
+                                margin-top: 50px;
+                            }
                             @media (max-width:800px){
                                 width: 100%;
                                 margin: 0 auto 100px;
