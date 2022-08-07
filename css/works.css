@@ -1718,6 +1718,12 @@ section .page_works_classic .works_classic_content .works_classic_item_box .work
   margin-bottom: 20px;
 }
 
+@media (max-width: 800px) {
+  section .page_works_classic .works_classic_content .works_classic_item_box .works_classic_item:nth-child(odd) .works_classic_item_list {
+    margin-bottom: 60px;
+  }
+}
+
 section .page_works_classic .works_classic_content .works_classic_item_box .works_classic_item:nth-child(odd) .works_classic_item_list:before {
   content: "";
   width: 10px;
@@ -1829,6 +1835,12 @@ section .page_works_classic .works_classic_content .works_classic_item_box .work
   position: relative;
   display: table;
   margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  section .page_works_classic .works_classic_content .works_classic_item_box .works_classic_item:nth-child(even) .works_classic_item_list {
+    margin-bottom: 60px;
+  }
 }
 
 section .page_works_classic .works_classic_content .works_classic_item_box .works_classic_item:nth-child(even) .works_classic_item_list:before {

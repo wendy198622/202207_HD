@@ -777,6 +777,9 @@ section{
                         position: relative;
                         display: table;
                         margin-bottom: 20px;
+                        @media (max-width:800px){
+                            margin-bottom: 60px;
+                        }
                         &:before{
                             content: "";
                             width: 10px;
@@ -866,6 +869,9 @@ section{
                         position: relative;
                         display: table;
                         margin-bottom: 20px;
+                        @media (max-width:800px){
+                            margin-bottom: 60px;
+                        }
                         &:before{
                             content: "";
                             width: 10px;
