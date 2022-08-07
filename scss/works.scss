@@ -957,10 +957,18 @@ section{
             .works_classic_page_photo{
                 width: 45%;
                 float: left;
+                img{ width: 100%;}
+                @media (max-width:800px){
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
             }
             .works_classic_page_inner{
                 width: 50%;
                 float: right;
+                @media (max-width:800px){
+                    width: 100%;
+                }
                 .works_page_introduce{
                     .works_page_introduce_box{
                         width: 100%;
