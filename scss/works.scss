@@ -759,10 +759,15 @@ section{
                 }
             }
             .works_classic_item_box{
+                .works_classic_item{
+                    transform: translateY(-80px);
+                    &.scroll_ani{
+                        animation: scrollani 1s both;
+                    }
+                }
                 .works_classic_item:nth-child(odd){
                     width: 40%;
                     margin-left: 50%;
-                    margin-top: -60px;
                     @media (max-width:800px){
                         width: 90%;
                         margin: 0 auto;
@@ -842,11 +847,6 @@ section{
                         .works_classic_photo{
                             width: calc( 100% - 260px );
                             float: right;
-                            margin-top: 0;
-                            transition: all .3s;
-                            &.scroll_ani{
-                                margin-top: 50px;
-                            }
                             @media (max-width:800px){
                                 width: 100%;
                                 margin: 0 auto 100px;
@@ -857,7 +857,6 @@ section{
                 .works_classic_item:nth-child(even){
                     width: 40%;
                     margin-left: 10%;
-                    margin-top: -60px;
                     @media (max-width:800px){
                         width: 90%;
                         margin: 0 auto;
@@ -937,16 +936,16 @@ section{
                         .works_classic_photo{
                             width: calc( 100% - 260px );
                             float: left;
-                            transition: all .3s;
-                            &.scroll_ani{
-                                margin-top: 50px;
-                            }
                             @media (max-width:800px){
                                 width: 100%;
                                 margin: 0 auto 100px;
                             }
                         }
                     }
+                }
+                @keyframes scrollani {
+                    from{ transform: translateY(-50px);}
+                    to{ transform: translateY(0px);}
                 }
             }
         }
