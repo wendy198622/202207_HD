@@ -9,8 +9,7 @@
 	<meta name="keywords" content="" />
 	<meta name="Resource-type" content="" />
 	<!-- <link rel="icon" href="img/logo.ico"> -->
-	<meta property="og:image"
-		content="https://neo-vision.com.tw.61-221-12-56.dolphin.potia.net/web/img/index/1200x628.jpg">
+    <meta property="og:image" content="http://huadeng.tw/img/Huadeng.jpg">
 
 	
 	<!-- css -->
@@ -67,29 +66,36 @@
 					    <div class="works_page_photo_box slide">
                             <div class="works_page_photo_item">
                                 <div class="photo">
-                                    <img src="img/works_page_kv_01.jpg" alt="">                                
+                                    <img class="pc" src="img/works_page_kv_01.jpg" alt="">   
+                                    <img class="mob" src="img/works_page_kv_01_mob.jpg" alt="">                               
                                 </div>
                                 <span>3D外觀示意圖</span>
                             </div>
                             <div class="works_page_photo_item">
                                 <div class="photo">
-                                    <img src="img/works_page_kv_02.jpg" alt="">                                
+                                    <img class="pc" src="img/works_page_kv_02.jpg" alt="">    
+                                    <img class="mob" src="img/works_page_kv_02_mob.jpg" alt="">                              
                                 </div>
                                 <span>3D外觀示意圖</span>
                             </div>
                             <div class="works_page_photo_item">
                                 <div class="photo">
-                                    <img src="img/works_page_kv_03.jpg" alt="">                                
+                                    <img class="pc" src="img/works_page_kv_03.jpg" alt="">   
+                                    <img class="mob" src="img/works_page_kv_03_mob.jpg" alt="">                               
                                 </div>
                                 <span>3D外觀示意圖</span>
                             </div>
                         </div>
                     </div>
-                    <div class="works_page_title">
-                        <h4 style="font-size: 28px;">建案特色</h4>
-                        <p style="font-size: 20px; padding: 10px 0;">區域指標大型個案，近3,000坪壯闊大基地，絕佳地段，雙語學區，公園埤塘，產品多元，豐富多樣全齡化公設，動靜皆宜，飯店級休閒設施，社區自成一格自主生活圈。</p>
+
+                    <!-- 編輯區塊開始 -->
+
+                    <div class="works_page_title" style="margin-top:60px";>
+                        <h4 style="font-size: 28px; font-family: ’Questrial’, ’Noto Serif TC’, serif;">建案特色</h4>
+                        <p style="font-size: 20px; padding: 10px 0; font-family: 'Noto Sans TC', sans-serif; font-weight: 300;">區域指標大型個案，近3,000坪壯闊大基地，絕佳地段，雙語學區，公園埤塘，產品多元，豐富多樣全齡化公設，動靜皆宜，飯店級休閒設施，社區自成一格自主生活圈。</p>
                     </div>
-                    <div class="works_page_photo">
+                    <!-- 電腦版圖片區塊 start -->
+                    <div class="works_page_photo pc">
                         <ul>
                             <li style="width: 33.3333%; padding: 0 8px;">
                                 <div class="photo">
@@ -111,10 +117,40 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="works_page_title">
-                        <h4 style="font-size: 28px;">建材說明</h4>
-                        <p style="font-size: 20px; padding: 10px 0;">台泥、維夫拉克電子鎖、玄關甲種防火門、力霸氣密窗、全套櫻花廚具(含櫥櫃)、永大電梯..</p>
+                    <!-- 電腦版圖片區塊 end -->
+
+                    <!-- 手機版圖片區塊 start -->
+                    <div class="works_page_photo mob">
+                        <ul>
+                            <li style="width: 100%; padding: 0 8px; margin-bottom: 20px;">
+                                <div class="photo">
+                                    <img src="img/works_page_photo_01.jpg" alt="">                                
+                                </div>
+                                <span>大園公園</span>
+                            </li>
+                            <li style="width: 100%; padding: 0 8px; margin-bottom: 20px;">
+                                <div class="photo">
+                                    <img src="img/works_page_photo_02.jpg" alt="">                                
+                                </div>
+                                <span>全聯福利中心</span>
+                            </li>
+                            <li style="width: 100%; padding: 0 8px; margin-bottom: 20px;">
+                                <div class="photo">
+                                    <img src="img/works_page_photo_03.jpg" alt="">                                
+                                </div>
+                                <span>大園國中</span>
+                            </li>
+                        </ul>
                     </div>
+                    <!-- 手機版圖片區塊 end -->
+
+                    <div class="works_page_title" style="margin-top:60px;">
+                        <h4 style="font-size: 28px; font-family: ’Questrial’, ’Noto Serif TC’, serif;">建材說明</h4>
+                        <p style="font-size: 20px; padding: 10px 0; font-family: 'Noto Sans TC', sans-serif; font-weight: 300;">台泥、維夫拉克電子鎖、玄關甲種防火門、力霸氣密窗、全套櫻花廚具(含櫥櫃)、永大電梯..</p>
+                    </div>
+
+                    <!-- 編輯區快結束 -->
+                    
                     <div class="works_page_introduce">
                         <div class="works_page_introduce_box">
                             <div class="works_page_title">
@@ -178,33 +214,35 @@
                         <div class="works_page_contactus_box">
 				            <h3>RESERVE</h3>
                             <h2>預約賞屋</h2>
-                            <div class="works_page_contactus_form">
-                                <div class="works_page_contactus_form_item">
-                                    <label for="name">姓名</label>
-                                    <input type="text" v-model="name" name="name" placeholder="客戶姓名（必填）" required />
+                            <!-- <form> -->
+                                <div class="works_page_contactus_form">
+                                    <div class="works_page_contactus_form_item">
+                                        <label for="name">姓名</label>
+                                        <input type="text" v-model="name" name="name" placeholder="客戶姓名（必填）" required />
+                                    </div>
+                                    <div class="works_page_contactus_form_item">
+                                        <label for="phone">連絡電話 </label>
+                                        <input type="text" v-model="phone" name="phone" placeholder="連絡電話（必填）" required />
+                                    </div>
+                                    <div class="works_page_contactus_form_item">
+                                        <label for="phone">E-mail</label>
+                                        <input type="text" v-model="email" name="email" placeholder="電子信箱" required />
+                                    </div>
+                                    <div class="works_page_contactus_form_item">
+                                        <label for="name">預約日期</label>
+                                        <input type="text" v-model="date" name="date" placeholder="預約賞屋日期（必填）" required />
+                                    </div>
+                                    <div class="works_page_contactus_form_item">
+                                        <label for="message">留言</label>
+                                        <textarea id="message" v-model="message" name="message" required></textarea>
+                                    </div>
+                                    <div class="works_page_contactus_form_item check">
+                                        <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" v-model="check">
+                                        <label for="checkbox" class="checktxt">我同意通過電話方式與我聯絡 <a href="#">隱私權政策規範</a></label>
+                                    </div>
+                                    <button class="send">確認送出</button>
                                 </div>
-                                <div class="works_page_contactus_form_item">
-                                    <label for="phone">連絡電話 </label>
-                                    <input type="text" v-model="phone" name="phone" placeholder="連絡電話（必填）" required />
-                                </div>
-                                <div class="works_page_contactus_form_item">
-                                    <label for="phone">E-mail</label>
-                                    <input type="text" v-model="email" name="email" placeholder="電子信箱" required />
-                                </div>
-                                <div class="works_page_contactus_form_item">
-                                    <label for="name">預約日期</label>
-                                    <input type="text" v-model="date" name="date" placeholder="預約賞屋日期（必填）" required />
-                                </div>
-                                <div class="works_page_contactus_form_item">
-                                    <label for="message">留言</label>
-                                    <textarea id="message" v-model="message" name="message" required></textarea>
-                                </div>
-                                <div class="works_page_contactus_form_item check">
-                                    <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" v-model="check">
-                                    <label for="checkbox" class="checktxt">我同意通過電話方式與我聯絡 <a href="#">隱私權政策規範</a></label>
-                                </div>
-                                <button class="send">確認送出</button>
-                            </div>
+                            <!-- </form> -->
                         </div>
                     </div>
                 </div>
@@ -214,12 +252,11 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.1805503986498!2d121.17012076523898!3d25.061868932491866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34682165021d12f1%3A0xdc92c24a57a70749!2z6I-v55m75paw5Z-O5bOwIOaOpeW-heS4reW_gw!5e0!3m2!1szh-TW!2stw!4v1657454071698!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 	</section>
-    
+
     <section class="form_popup">
         <div class="form_popup_box">
-            <p>感謝您填寫預約看屋表格<br>
-                我們收到您提供的資訊以後會儘快替您安排並與您聯繫<br><br>
-                謝謝
+            <p>感謝您填寫預約看屋表格<br> 我們收到您提供的資訊以後會儘快替您安排並與您聯繫
+                <br><br> 謝謝
             </p>
             <div class="popup_close">
                 <span class="material-icons">
@@ -232,8 +269,7 @@
     <footer>
         <div class="footer_logo">
             <a href="/">
-                <img src="img/HD_logo_icon.svg" alt="">
-                <p>華登建設股份有限公司</p>
+                <img src="img/HD_logo_square_white.svg" alt="">
             </a>
         </div>
         <ul class="footer_menu">

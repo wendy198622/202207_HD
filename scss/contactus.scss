@@ -127,7 +127,7 @@ section{
                     color: #a6936a;
                     overflow: hidden;
                     @media (max-width:960px){
-                        width: 100% ;
+                        width: calc( 100% - 20px) ;
                         margin: 0 10px 20px;
                     }
                     @media (max-width:600px){
@@ -137,7 +137,7 @@ section{
                     &.fullwidth{
                         width: calc( 100% - 80px) ;
                         @media (max-width:960px){
-                            width: 100%;
+                            width: calc( 100% - 20px) ;
                         }
                     }
 

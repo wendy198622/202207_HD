@@ -9,7 +9,7 @@
     <meta name="keywords" content="" />
     <meta name="Resource-type" content="" />
     <!-- <link rel="icon" href="img/logo.ico"> -->
-    <meta property="og:image" content="http://huadeng.tw/img/event_03.jpg">
+    <meta property="og:image" content="http://huadeng.tw/img/Huadeng.jpg">
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
@@ -54,7 +54,7 @@
     </header>
 
     <section>
-        <div class="home_event">
+        <div class="home_event wow fadeIn">
             <div class="home_event_banner swiper mySwiper">
                 <div class="top"></div>
                 <div class="swiper-wrapper">
@@ -107,7 +107,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="home_works_photo_item">
+                        <!-- <div class="home_works_photo_item">
                             <a href="works-page.html">
                                 <div class="photo">
                                     <div class="cover wow bounceIn" data-wow-duration="2s" data-wow-delay=".5s"></div>
@@ -121,8 +121,8 @@
                                     2022
                                 </div>
                             </a>
-                        </div>
-                        <div class="home_works_photo_item">
+                        </div> -->
+                        <!-- <div class="home_works_photo_item">
                             <a href="works-page.html">
                                 <div class="photo">
                                     <div class="cover wow bounceIn" data-wow-duration="2s" data-wow-delay=".5s"></div>
@@ -181,7 +181,7 @@
                                     2022
                                 </div>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -212,7 +212,7 @@
                             <span class="news_title">由華登建設所投資興建的「華登天囍」，地點位於尖山路122號，基地面積644坪，規劃A、B兩棟地上14樓、地下，基地面積644坪，規劃A、B兩棟地上14樓</span>
                         </a>
                     </li>
-                    <li class="wow fadeInUp" data-wow-delay="1s">
+                    <!-- <li class="wow fadeInUp" data-wow-delay="1s">
                         <a href="news-page.html">
                             <span class="news_date">2022.02.25</span>
                             <span class="news_title">華登建設投資興建，基地位於大園區環區西路與科二街，預計2022年4月公開銷售。</span>
@@ -223,7 +223,7 @@
                             <span class="news_date">2022.02.25</span>
                             <span class="news_title">由華登建設所投資興建的「華登天囍」，地點位於尖山路122號，基地面積644坪，規劃A、B兩棟地上14樓、地下，基地面積644坪，規劃A、B兩棟地上14樓</span>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -238,53 +238,55 @@
 				<p class="wow fadeInDown" data-wow-delay=".5s">若您有任何客服意見留言、購屋及建案相關問題詢問，歡迎您填寫左方表單與我們聯絡。<span>* 欄位表示必填</span></p>
 			</div>
             <div class="home_contactus_content">
-                <div class="home_contactus_form">
-                    <div class="home_contactus_form_item select wow fadeInUp">
-                        <label for="name">預約個案 <span>*</span></label>
-                        <select>
-							<option>請選擇建案</option>
-							<option>Dog</option>
-							<option>Cat</option>
-							<option>Hamster</option>
-							<option>Parrot</option>
-							<option>Spider</option>
-							<option>Goldfish</option>
-						</select>
+                <!-- <form> -->
+                    <div class="home_contactus_form">
+                        <div class="home_contactus_form_item select wow fadeInUp">
+                            <label for="name">預約個案 <span>*</span></label>
+                            <select>
+                                <option>請選擇建案</option>
+                                <option>Dog</option>
+                                <option>Cat</option>
+                                <option>Hamster</option>
+                                <option>Parrot</option>
+                                <option>Spider</option>
+                                <option>Goldfish</option>
+                            </select>
+                        </div>
+                        <div class="home_contactus_form_item wow fadeInUp" data-wow-delay=".3s">
+                            <label for="name">姓名 <span>*</span></label>
+                            <input type="text" v-model="name" name="name" placeholder="" required />
+                        </div>
+                        <div class="home_contactus_form_item select wow fadeInUp" data-wow-delay=".5s">
+                            <label for="name">聯絡時段 <span>*</span></label>
+                            <select>
+                                <option>請選擇時段</option>
+                                <option>Dog</option>
+                                <option>Cat</option>
+                                <option>Hamster</option>
+                                <option>Parrot</option>
+                                <option>Spider</option>
+                                <option>Goldfish</option>
+                            </select>
+                        </div>
+                        <div class="home_contactus_form_item wow fadeInUp" data-wow-delay=".7s">
+                            <label for="phone">連絡電話 <span>*</span></label>
+                            <input type="text" v-model="phone" name="phone" placeholder="" required />
+                        </div>
+                        <div class="home_contactus_form_item fullwidth wow fadeInDown" data-wow-delay=".5s">
+                            <label for="email">E-mail <span>*</span></label>
+                            <input type="text" v-model="email" name="email" placeholder="" required />
+                        </div>
+                        <div class="home_contactus_form_item fullwidth wow fadeInDown" data-wow-delay=".7s">
+                            <label for="message">留言</label>
+                            <textarea id="message" v-model="message" name="message" required></textarea>
+                        </div>
+                        <div class="home_contactus_form_item fullwidth wow fadeInLeft">
+                            <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" v-model="check">
+                            <label for="checkbox" class="checktxt">我同意通過電話方式與我聯絡 <a href="#">隱私權政策規範</a></label>
+                        </div>
+                        <button class="send wow fadeInRight" data-wow-delay=".5s">確認送出</button>
                     </div>
-                    <div class="home_contactus_form_item wow fadeInUp" data-wow-delay=".3s">
-                        <label for="name">姓名 <span>*</span></label>
-                        <input type="text" v-model="name" name="name" placeholder="" required />
-                    </div>
-                    <div class="home_contactus_form_item select wow fadeInUp" data-wow-delay=".5s">
-                        <label for="name">聯絡時段 <span>*</span></label>
-                        <select>
-							<option>請選擇時段</option>
-							<option>Dog</option>
-							<option>Cat</option>
-							<option>Hamster</option>
-							<option>Parrot</option>
-							<option>Spider</option>
-							<option>Goldfish</option>
-						</select>
-                    </div>
-                    <div class="home_contactus_form_item wow fadeInUp" data-wow-delay=".7s">
-                        <label for="phone">連絡電話 <span>*</span></label>
-                        <input type="text" v-model="phone" name="phone" placeholder="" required />
-                    </div>
-                    <div class="home_contactus_form_item fullwidth wow fadeInDown" data-wow-delay=".5s">
-                        <label for="email">E-mail <span>*</span></label>
-                        <input type="text" v-model="email" name="email" placeholder="" required />
-                    </div>
-                    <div class="home_contactus_form_item fullwidth wow fadeInDown" data-wow-delay=".7s">
-                        <label for="message">留言</label>
-                        <textarea id="message" v-model="message" name="message" required></textarea>
-                    </div>
-                    <div class="home_contactus_form_item fullwidth wow fadeInLeft">
-                        <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" v-model="check">
-                        <label for="checkbox" class="checktxt">我同意通過電話方式與我聯絡 <a href="#">隱私權政策規範</a></label>
-                    </div>
-                    <button class="send wow fadeInRight" data-wow-delay=".5s">確認送出</button>
-                </div>
+                <!-- </form> -->
             </div>
         </div>
     </section>
@@ -305,8 +307,7 @@
     <footer>
         <div class="footer_logo">
             <a href="/">
-                <img src="img/HD_logo_icon.svg" alt="">
-                <p>華登建設股份有限公司</p>
+                <img src="img/HD_logo_square_white.svg" alt="">
             </a>
         </div>
         <ul class="footer_menu">
@@ -394,21 +395,21 @@
         //     slidesToScroll: 1
         // });
 
-        $('.home_works_photo_box').slick({
-            // arrow: true,
-            dots: false,
-            autoplay: false,
-            autoplaySpeed: 2000,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            responsive: [{
-                breakpoint: 960,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            }]
-        });
+        // $('.home_works_photo_box').slick({
+        //     // arrow: true,
+        //     dots: false,
+        //     autoplay: false,
+        //     autoplaySpeed: 2000,
+        //     slidesToShow: 3,
+        //     slidesToScroll: 1,
+        //     responsive: [{
+        //         breakpoint: 960,
+        //         settings: {
+        //             slidesToShow: 1,
+        //             slidesToScroll: 1
+        //         }
+        //     }]
+        // });
 
         // $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         //     $(".current_number").text("" + (nextSlide + 1));

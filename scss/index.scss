@@ -80,12 +80,19 @@ section{
             position: relative;
             left: 0;
             overflow: hidden;
+            // .home_event_banner_item{}
             img{
+                animation: photozoom 10s alternate infinite linear;
                 &.pc{ display: block;}
                 &.mob{ display: none;}
                 @media (max-width:800px){
                     &.pc{ display: none;}
                     &.mob{ display: block;}
+                }
+                @keyframes photozoom {
+                    from{ transform: scale(1);}
+                    to  { transform: scale(1.2);}
+                    
                 }
             }
             .top{
@@ -289,9 +296,11 @@ section{
                 }
             }
             .home_works_photo{
-                width: 113%;
+                // width: 113%;
+                width: 400px;
                 @media (max-width:960px){
-                    width: 180%;
+                    // width: 180%;
+                    width: 102%;
                 }
                 .home_works_photo_box{
                     .home_works_photo_item{
@@ -303,6 +312,10 @@ section{
                         .photo{
                             width: 100%;
                             position: relative;
+                            overflow: hidden;
+                            img{
+                                transition: all .3s;
+                            }
                             &:after{
                                 background-color: #000;
                                 content: "";
@@ -310,7 +323,7 @@ section{
                                 height: 5px;
                                 left: 0;
                                 position: absolute;
-                                bottom: -5px;
+                                bottom: 0px;
                                 transform: scaleX(0);
                                 transform-origin: right center;
                                 transition: transform .5s cubic-bezier(.19,1,.22,1);
@@ -381,6 +394,9 @@ section{
                         }
                         &:hover{
                             .photo{
+                                img{
+                                    transform: scale(1.1);
+                                }
                                 &:after{
                                     transform: scaleX(1);
                                     transform-origin: left center;
@@ -552,12 +568,14 @@ section{
             }
             .home_news_item{
                 padding: 10px 0;
+                min-height: 300px;
+                // outline: 1px solid red;
                 li{
                     padding: 20px 0;
                     text-align: justify;
                     overflow: hidden;
                     border-bottom: 1px dashed #a6936a;
-                    &:last-child{ border-bottom: 0;}
+                    // &:last-child{ border-bottom: 0;}
                     a{ 
                         color: #a6936a;
                         opacity: 1;
@@ -603,7 +621,7 @@ section{
     }
 
     .home_contactus{
-        padding: 25px 10%;
+        padding: 60px 10% 25px;
         position: relative;
         overflow: hidden;
         @media (max-width:960px){
@@ -659,7 +677,7 @@ section{
                     color: #a6936a;
                     overflow: hidden;
                     @media (max-width:960px){
-                        width: 100% ;
+                        width: calc( 100% - 20px) ;
                         margin: 0 10px 20px;
                     }
                     @media (max-width:600px){
@@ -669,7 +687,7 @@ section{
                     &.fullwidth{
                         width: calc( 100% - 80px) ;
                         @media (max-width:960px){
-                            width: 100%;
+                            width: calc( 100% - 20px) ;
                         }
                     }
 

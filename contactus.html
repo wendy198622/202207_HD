@@ -9,8 +9,7 @@
 	<meta name="keywords" content="" />
 	<meta name="Resource-type" content="" />
 	<!-- <link rel="icon" href="img/logo.ico"> -->
-	<meta property="og:image"
-		content="https://neo-vision.com.tw.61-221-12-56.dolphin.potia.net/web/img/index/1200x628.jpg">
+    <meta property="og:image" content="http://huadeng.tw/img/Huadeng.jpg">
 	
 	<!-- css -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css" />
@@ -61,62 +60,63 @@
 				<p class="wow fadeInDown" data-wow-delay=".5s">若您有任何客服意見留言、購屋及建案相關問題詢問，歡迎您填寫左方表單與我們聯絡。<span>* 欄位表示必填</span></p>
 			</div>
 			<div class="contactus_content">
-				<div class="contactus_form">
-					<div class="contactus_form_item select wow fadeInUp">
-						<label for="name">預約個案 <span>*</span></label>
-						<select>
-							<option>請選擇建案</option>
-							<option>Dog</option>
-							<option>Cat</option>
-							<option>Hamster</option>
-							<option>Parrot</option>
-							<option>Spider</option>
-							<option>Goldfish</option>
-						</select>
+				<!-- <form> -->
+					<div class="contactus_form">
+						<div class="contactus_form_item select wow fadeInUp">
+							<label for="name">預約個案 <span>*</span></label>
+							<select>
+								<option>請選擇建案</option>
+								<option>Dog</option>
+								<option>Cat</option>
+								<option>Hamster</option>
+								<option>Parrot</option>
+								<option>Spider</option>
+								<option>Goldfish</option>
+							</select>
+						</div>
+						<div class="contactus_form_item wow fadeInUp" data-wow-delay=".3s">
+							<label for="name">姓名 <span>*</span></label>
+							<input type="text" v-model="name" name="name" placeholder="" required />
+						</div>
+						<div class="contactus_form_item wow fadeInUp" data-wow-delay=".5s">
+							<label for="name">聯絡時段 <span>*</span></label>
+							<select>
+								<option>請選擇時段</option>
+								<option>Dog</option>
+								<option>Cat</option>
+								<option>Hamster</option>
+								<option>Parrot</option>
+								<option>Spider</option>
+								<option>Goldfish</option>
+							</select>
+						</div>
+						<div class="contactus_form_item wow fadeInUp" data-wow-delay=".7s">
+							<label for="phone">連絡電話 <span>*</span></label>
+							<input type="text" v-model="phone" name="phone" placeholder="" required />
+						</div>
+						<div class="contactus_form_item fullwidth wow fadeInDown" data-wow-delay="1s">
+							<label for="email">E-mail <span>*</span></label>
+							<input type="text" v-model="email" name="email" placeholder="" required />
+						</div>
+						<div class="contactus_form_item fullwidth wow fadeInDown" data-wow-delay="1.3s">
+							<label for="message">留言</label>
+							<textarea id="message" v-model="message" name="message" required></textarea>
+						</div>
+						<div class="contactus_form_item fullwidth wow fadeInLeft">
+							<input type="checkbox" id="checkbox" name="checkbox" value="checkbox" v-model="check">
+							<label for="checkbox" class="checktxt">我同意通過電話方式與我聯絡 <a href="#">隱私權政策規範</a></label>
+						</div>
+						<button class="send wow fadeInRight">確認送出</button>
 					</div>
-					<div class="contactus_form_item wow fadeInUp" data-wow-delay=".3s">
-						<label for="name">姓名 <span>*</span></label>
-						<input type="text" v-model="name" name="name" placeholder="" required />
-					</div>
-					<div class="contactus_form_item wow fadeInUp" data-wow-delay=".5s">
-						<label for="name">聯絡時段 <span>*</span></label>
-						<select>
-							<option>請選擇時段</option>
-							<option>Dog</option>
-							<option>Cat</option>
-							<option>Hamster</option>
-							<option>Parrot</option>
-							<option>Spider</option>
-							<option>Goldfish</option>
-						</select>
-					</div>
-					<div class="contactus_form_item wow fadeInUp" data-wow-delay=".7s">
-						<label for="phone">連絡電話 <span>*</span></label>
-						<input type="text" v-model="phone" name="phone" placeholder="" required />
-					</div>
-                    <div class="contactus_form_item fullwidth wow fadeInDown" data-wow-delay="1s">
-                        <label for="email">E-mail <span>*</span></label>
-                        <input type="text" v-model="email" name="email" placeholder="" required />
-                    </div>
-					<div class="contactus_form_item fullwidth wow fadeInDown" data-wow-delay="1.3s">
-						<label for="message">留言</label>
-						<textarea id="message" v-model="message" name="message" required></textarea>
-					</div>
-					<div class="contactus_form_item fullwidth wow fadeInLeft">
-						<input type="checkbox" id="checkbox" name="checkbox" value="checkbox" v-model="check">
-						<label for="checkbox" class="checktxt">我同意通過電話方式與我聯絡 <a href="#">隱私權政策規範</a></label>
-					</div>
-					<button class="send wow fadeInRight">確認送出</button>
-				</div>
+				<!-- </form> -->
 			</div>
 		</div>
     </section>    
-    
+
     <section class="form_popup">
         <div class="form_popup_box">
-            <p>感謝您填寫預約看屋表格<br>
-                我們收到您提供的資訊以後會儘快替您安排並與您聯繫<br><br>
-                謝謝
+            <p>感謝您填寫預約看屋表格<br> 我們收到您提供的資訊以後會儘快替您安排並與您聯繫
+                <br><br> 謝謝
             </p>
             <div class="popup_close">
                 <span class="material-icons">
@@ -129,8 +129,7 @@
     <footer>
         <div class="footer_logo">
             <a href="/">
-                <img src="img/HD_logo_icon.svg" alt="">
-                <p>華登建設股份有限公司</p>
+                <img src="img/HD_logo_square_white.svg" alt="">
             </a>
         </div>
         <ul class="footer_menu">

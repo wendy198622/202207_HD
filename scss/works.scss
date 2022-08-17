@@ -87,6 +87,7 @@ section{
                 writing-mode: vertical-lr;
                 float: left;
                 margin-right: 10px;
+                margin-bottom: 0;
             }
             h3{
                 float: left;
@@ -98,6 +99,8 @@ section{
                 position: absolute;
                 bottom: 0;
                 right: 6%;
+                margin: 0;
+                padding: 0;
                 li{
                     float: left;
                     border-right: 1px solid #a6936a;
@@ -279,6 +282,12 @@ section{
                 .works_page_photo_kv{    
                     padding-bottom: 20px;
                     .works_page_photo_box{
+                        img.pc{ display: block;}
+                        img.mob{ display: none;}
+                        @media (max-width:960px){
+                            img.pc{ display: none;}
+                            img.mob{ display: block;}
+                        }
                         .slick-dots{
                             text-align: left;
                             bottom: -40px;
@@ -331,14 +340,12 @@ section{
                     }
                 }
                 .works_page_title{
-                    margin-top: 60px;
+                    h4{
+                        font-size: 28px;
+                    }
                     h1,h2,h3,h4,h5,h6,p{
                         letter-spacing: 1px;
                         line-height: 1.8;
-                    }
-                    p{
-                        font-family: 'Noto Sans TC', sans-serif;
-                        font-weight: 300;
                     }
                 }
                 .works_page_photo{
@@ -366,6 +373,7 @@ section{
                     .works_page_introduce_box{
                         width: 48%;
                         float: left;
+                        margin-top: 60px;
                         @media (max-width:960px){
                             width: 100%;
                             float: unset;
@@ -388,7 +396,7 @@ section{
                                 padding: 0 5px;
                                 li{
                                     padding: 12px 0;
-                                    border-bottom: 1px solid #a6936a;
+                                    border-bottom: 1px solid rgba(166,147,106,.3);
                                     display: flex;
                                     overflow: hidden;
                                     span{
@@ -1017,7 +1025,7 @@ section{
                                 padding: 20px 5px;
                                 li{
                                     padding: 12px 0;
-                                    border-bottom: 1px solid #a6936a;
+                                    border-bottom: 1px solid rgba(166,147,106,.3);
                                     display: flex;
                                     overflow: hidden;
                                     &:last-child{

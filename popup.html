@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>華登建設</title>
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="Resource-type" content="" />
+    <!-- <link rel="icon" href="img/logo.ico"> -->
+    <meta property="og:image" content="http://huadeng.tw/img/Huadeng.jpg">
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/popup.css" />
+    <link rel="stylesheet" type="text/css" href="css/hongkong.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"/>
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <!-- <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script> -->
+    <script type="text/javascript" src="js/imgLiquid-min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/hongkong.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <section>
+        <div class="form_popup">
+            <div class="form_popup_box">
+                <p>感謝您填寫預約看屋表格<br> 我們收到您提供的資訊以後會儘快替您安排並與您聯繫
+                    <br><br> 謝謝
+                </p>
+                <div class="popup_close">
+                    <span class="material-icons">
+                        close
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<script>
+    $(document).ready(function() {
+        $.hongkong({
+            mobile: true
+        });
+
+        var swiper = new Swiper(".mySwiper", {
+            // grabCursor: true,
+            loop: true,
+            autoplay: true,
+            speed: 1000,
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: ["-20%", 0, -1],
+                },
+                next: {
+                    translate: ["100%", 0, 0],
+                },
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+
+        var menu_close = true
+        new WOW().init()
+
+        $(".imgLiquidFill").imgLiquid()
+
+        $('.menu-btn').on('click', function() {
+
+            $('.header_menu').toggle(500);
+            if(menu_close){
+                    $('.header').css('background','rgba(255,255,255,.8)')
+            }else{
+                    $('.header').css('background','rgba(255,255,255,0)')
+            }
+            menu_close = !menu_close
+        });
+
+        $(".gotop").on("click", function() {
+            $("html, body").animate({
+                scrollTop: 0
+            }, 500);
+        });
+
+        // var $slider = $('.home_event_banner');
+
+        // $slider.on('init', function(event, slick) {
+        //     let slidesCount = slick.slideCount;
+        //     //console.log(slidesCount);
+        //     $(".total_number").text("" + slidesCount);
+        // });
+
+        // $slider.slick({
+        //     dots: false,
+        //     autoplay: true,
+        //     autoplaySpeed: 2000,
+        //     fade: true,
+        //     slidesToShow: 1,
+        //     slidesToScroll: 1
+        // });
+
+        $('.home_works_photo_box').slick({
+            // arrow: true,
+            dots: false,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [{
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }]
+        });
+
+        // $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        //     $(".current_number").text("" + (nextSlide + 1));
+        // });
+          
+        
+        // $('.send').on('click', function () {
+        //     $('.form_popup').addClass('is_acted');
+        //     setTimeout(() => {
+        //         $('.form_popup').removeClass('is_acted');
+        //     }, 10000)
+        // });
+        
+        // $('.popup_close').on('click', function () {
+        //     $('.form_popup').removeClass('is_acted');
+        // });
+    
+        $(window).scroll(function() {    
+            var scroll = $(window).scrollTop();    
+            if (scroll >= 1000) {
+                $("header").addClass("close");
+            }else{
+                $("header").removeClass("close");
+            }
+        })
+
+    });
+</script>
+
+</html>

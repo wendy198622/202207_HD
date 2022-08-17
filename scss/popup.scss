@@ -1,0 +1,66 @@
+@import '_setting';
+
+body{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+section{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+
+    .form_popup{
+      width: 100%;
+      height: 100%;
+      min-width: 100%;
+      position: fixed;
+      z-index: 200;
+      top: 0;
+      left: 0;
+      background: rgba(0,0,0,.3);
+    //   opacity: 0;
+    //   visibility: hidden;
+      transition: all .3s;
+      .form_popup_box{
+          width: 660px;
+          height: 220px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+          background: #fff;
+          text-align: center;
+          padding: 40px 20px;
+          @media (max-width:800px){
+              width: 90%;
+              height: 300px;
+          }
+          p{
+              font-size: 24px;
+              line-height: 1.6;
+              font-weight: 500;
+          }
+          .popup_close{
+              font-size: 42px;
+              position: absolute;
+              right: 5px;
+              top: 5px;
+              .material-icons{
+                  font-size: 40px;
+              }
+              &:hover{
+                  cursor: pointer;
+              }
+          }
+      }
+    //   &.is_acted{
+    //       opacity: 1;
+    //       visibility: visible;
+    //   }
+    }
+    
+
+}
