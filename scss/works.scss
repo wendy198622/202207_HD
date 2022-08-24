@@ -469,6 +469,9 @@ section{
                                         width: 360px;
                                         margin-top: 20px;
                                     }
+                                    @media (max-width:600px){
+                                        width: 320px;
+                                    }
                                 }
             
                                 label{
@@ -495,6 +498,10 @@ section{
                                             text-decoration: underline;
                                             font-size: 12px;
                                             letter-spacing: 1px;
+                                            @media (max-width:600px){
+                                                display: block;
+                                                margin-top: -12px;
+                                            }
                                         }
                                     }
                                 }

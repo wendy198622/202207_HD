@@ -171,7 +171,8 @@ section{
                             text-decoration: underline;
                             font-size: 16px;
                             @media (max-width:600px){
-                                font-size: 12px;   
+                                font-size: 12px;    
+                                display: block;
                             }
                         }
                         span{

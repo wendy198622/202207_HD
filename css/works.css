@@ -1327,6 +1327,12 @@ section .page_works.inner .works_page_inner .works_page_introduce .works_page_co
   }
 }
 
+@media (max-width: 600px) {
+  section .page_works.inner .works_page_inner .works_page_introduce .works_page_contactus_box .works_page_contactus_form .works_page_contactus_form_item.check {
+    width: 320px;
+  }
+}
+
 section .page_works.inner .works_page_inner .works_page_introduce .works_page_contactus_box .works_page_contactus_form .works_page_contactus_form_item label {
   width: 140px;
   display: block;
@@ -1358,6 +1364,13 @@ section .page_works.inner .works_page_inner .works_page_introduce .works_page_co
   text-decoration: underline;
   font-size: 12px;
   letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+  section .page_works.inner .works_page_inner .works_page_introduce .works_page_contactus_box .works_page_contactus_form .works_page_contactus_form_item label.checktxt a {
+    display: block;
+    margin-top: -12px;
+  }
 }
 
 section .page_works.inner .works_page_inner .works_page_introduce .works_page_contactus_box .works_page_contactus_form .works_page_contactus_form_item input[type="text"] {

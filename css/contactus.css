@@ -953,6 +953,7 @@ section .page_contactus .contactus_content .contactus_form .contactus_form_item 
 @media (max-width: 600px) {
   section .page_contactus .contactus_content .contactus_form .contactus_form_item label a {
     font-size: 12px;
+    display: block;
   }
 }
 

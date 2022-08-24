@@ -1705,6 +1705,7 @@ section .home_contactus .home_contactus_content .home_contactus_form .home_conta
 @media (max-width: 600px) {
   section .home_contactus .home_contactus_content .home_contactus_form .home_contactus_form_item label a {
     font-size: 12px;
+    display: block;
   }
 }
 
