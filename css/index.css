@@ -1133,22 +1133,23 @@ section .home_works .home_works_content .home_works_more:hover:after {
 }
 
 section .home_works .home_works_content .home_works_photo {
-  width: 400px;
+  width: 100%;
 }
 
-@media (max-width: 960px) {
-  section .home_works .home_works_content .home_works_photo {
-    width: 102%;
-  }
+section .home_works .home_works_content .home_works_photo .home_works_photo_box {
+  overflow: hidden;
 }
 
 section .home_works .home_works_content .home_works_photo .home_works_photo_box .home_works_photo_item {
   padding: 0 20px 40px;
   overflow: hidden;
+  width: 400px;
+  float: left;
 }
 
 @media (max-width: 960px) {
   section .home_works .home_works_content .home_works_photo .home_works_photo_box .home_works_photo_item {
+    width: 102%;
     padding: 0 10px 40px;
   }
 }
